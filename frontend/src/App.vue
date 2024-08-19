@@ -59,8 +59,10 @@
     </div>
   </template>
 
+
   <script>
-  import StudentSidebar from "./components/StudentSidebar.vue";
+  //import <<file name>> from "path"
+    import StudentSidebar from "./components/student/StudentSidebar.vue";
 
   export default {
     data() {
@@ -101,5 +103,5 @@
 
   <style scoped>
   /* Scoped styles */
-
+  
   </style>

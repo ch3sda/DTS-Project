@@ -14,6 +14,10 @@ module.exports = {
         'primary-blue': '#27374D',
         'secondary-blue': '#34495E',
         'main-background': '#F1F1F1',
+        'my-green': '#419958',
+        'my-red': '#EB455F' ,
+        'my-yellow': '#F5943F'
+        //'name': '#code'
         // Add other custom colors here
       },
     },
