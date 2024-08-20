@@ -55,7 +55,8 @@
           </div>
         </div>
       </nav>
-      <StudentSidebar />
+      <!-- <StudentSidebar /> -->
+      <MazerSidebar />
       <div class="p-4 sm:ml-64">
    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
       <div class="grid grid-cols-3 gap-4 mb-4">
@@ -156,23 +157,25 @@
          </div>
       </div>
    </div>
-  </div>
+      </div>
     </div>
   </template>
 
 
   <script>
   //import <<file name>> from "path"
-    import StudentSidebar from "./components/student/StudentSidebar.vue";
+      import MazerSidebar from "./components/mazer/MazerSidebar.vue";
+      //import StudentSidebar from "./components/student/StudentSidebar.vue";
 
-  export default {
+      export default {
     data() {
       return {
         isDarkMode: false, // Default value; adjust based on the current theme
       };
     },
     components: {
-      StudentSidebar,
+      // StudentSidebar,
+      MazerSidebar,
     },
     mounted() {
       this.initializeTheme();
