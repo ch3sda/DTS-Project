@@ -1,26 +1,28 @@
-# Node.js and Vue.js
-node_modules/
-dist/
-*.log
+# Vue.js
+/frontend/node_modules
+/frontend/node_modules/.cache
+/frontend/dist
+
+# Node.js
+/node_modules
+/dist
+/node_modules/.cache
+
+# Log files
 npm-debug.log*
-pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-node_modules/.cache
+pnpm-debug.log*
 
-# OS-specific
-Thumbs.db
-.DS_Store
-
-# IDE-specific
-.vscode/
-.idea/
-*.iml
+# Editor Directories
+.idea
+.vscode
 *.suo
 *.ntvs*
-*.njsproj
+*njsproj
 *.sln
 *.sw?
+
 
 # Ignore Python bytecode and other Python files
 __pycache__/
