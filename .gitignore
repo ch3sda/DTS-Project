@@ -1,25 +1,24 @@
-# Vue.js
-/frontend/node_modules
-/frontend/node_modules/.cache
-/frontend/dist
-
-#node js
-/node_modules
-/dist
-/node_modules/.cache
-
-#log files
+# Node.js and Vue.js
+node_modules/
+dist/
+*.log
 npm-debug.log*
+pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
+node_modules/.cache
 
-#Editor Directories
-.idea
-.vscode
+# OS-specific
+Thumbs.db
+.DS_Store
+
+# IDE-specific
+.vscode/
+.idea/
+*.iml
 *.suo
 *.ntvs*
-*njsproj
+*.njsproj
 *.sln
 *.sw?
 
