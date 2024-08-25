@@ -64,7 +64,7 @@
   </template>
 
 
-  <script>
+<script>
   //import <<file name>> from "path"
       import MazerSidebar from "./components/mazer/MazerSidebar.vue";
       import MazerDashboard from "./components/mazer/MazerDashboard.vue";
@@ -108,7 +108,7 @@
       }
     }
   };
-  </script>
+</script>
 
   <style scoped>
   /* Scoped styles */
