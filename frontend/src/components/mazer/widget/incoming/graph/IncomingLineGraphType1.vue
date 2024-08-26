@@ -42,7 +42,7 @@
           },
           stroke: {
             curve: 'smooth',
-            width: 2,
+            width: 4,
             colors: '#1C64F2',
           },
           grid: {
