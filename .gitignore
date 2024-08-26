@@ -22,3 +22,96 @@ pnpm-debug.log*
 *njsproj
 *.sln
 *.sw?
+
+
+# Ignore Python bytecode and other Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore Django migrations
+**/migrations/
+
+# Ignore sensitive data files
+*.env
+.env.local
+
+# Ignore database files
+*.sqlite3
+
+# Ignore virtual environment
+venv/
+.venv/
+
+# Ignore Django static files
+**/staticfiles/
+**/media/
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Ignore npm and Yarn files
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore build files
+/dist/
+/build/
+/out/
+/coverage/
+
+# Ignore Vue.js local environment settings
+.local/
+.env
+.env.*.local
+
+# Ignore logs
+logs
+*.log
+*.log.*
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore package lock files
+package-lock.json
+yarn.lock
+
+# Ignore git specific files
+.git/
+
+# Ignore compiled javascript and CSS files
+/public/
+*.js.map
+*.css.map
+
+# Ignore testing files
+junit.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Ignore any compiled C extensions
+*.so
+
+# Ignore personal IDE config
+*.swp
+*~
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore debug output
+debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
