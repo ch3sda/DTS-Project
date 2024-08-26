@@ -68,7 +68,6 @@
   //import <<file name>> from "path"
       import MazerSidebar from "./components/mazer/MazerSidebar.vue";
       import MazerDashboard from "./components/mazer/MazerDashboard.vue";
-
       //import StudentSidebar from "./components/student/StudentSidebar.vue";
 
       export default {
