@@ -13,7 +13,12 @@ module.exports = {
         'main-background': '#F1F1F1',// Custom main background color
         'my-green': '#419958',       // Custom green color
         'my-red': '#EB455F',         // Custom red color
-        'my-yellow': '#F5943F',      // Custom yellow color
+        'my-yellow': '#F5943F', 
+        'my-blue': '#7579E7',
+        'my-green-2': '#399918',       // Custom green color
+        'my-red-2': '#C7253E',         // Custom red color
+        'my-yellow-2': '#FABC3F', 
+        'my-blue-2': '#5356FF'     // Custom yellow color
         // Add other custom colors here
       },
     },
