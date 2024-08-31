@@ -58,7 +58,7 @@
       <!-- <StudentSidebar /> -->
       <MazerSidebar />
       <div class="p-4 sm:ml-64">
-         <MazerDocument />
+         <MazerTrack />
       </div>
     </div>
   </template>
@@ -78,9 +78,9 @@
   //Mazer Part
   import MazerSidebar from "./components/mazer/MazerSidebar.vue";
   // import MazerDashboard from "./components/mazer/MazerDashboard.vue";
-  import MazerDocument from "./components/mazer/MazerDocument.vue";
+  // import MazerDocument from "./components/mazer/MazerDocument.vue";
   // import MazerNotification from "./components/mazer/MazerNotification.vue";
-  // import MazerTrack from "./components/mazer/MazerTrack.vue";
+  import MazerTrack from "./components/mazer/MazerTrack.vue";
   // import MazerIncoming from "./components/mazer/MazerIncoming.vue";
 
   //Teacher Part
@@ -114,9 +114,9 @@
       // Mazer //
       MazerSidebar,
       // MazerDashboard,
-      MazerDocument,
+      // MazerDocument,
       // MazerNotification,
-      // MazerTrack,
+      MazerTrack,
       // MazerIncoming,
 
       // Teacher //
