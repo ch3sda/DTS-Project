@@ -1,5 +1,5 @@
   <template>
-    <div id="app" class="bg-main-background dark:bg-gray-800 min-h-screen">
+    <div id="app" class="bg-white dark:bg-gray-800 min-h-screen">
       <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-primary-blue dark:border-gray-700">
         <div class="px-3 py-3 lg:px-5 lg:pl-3">
           <div class="flex items-center justify-between">
@@ -55,21 +55,36 @@
           </div>
         </div>
       </nav>
-      <StudentSidebar />
+      <StudentRegister />
     </div>
   </template>
 
-  <script>
-  import StudentSidebar from "./components/StudentSidebar.vue";
 
-  export default {
+  <script>
+//import HeadDepartmentRegister from './components/headdepartment/HeadDepartmentRegister.vue';
+  import StudentRegister from './components/student/StudentRegister.vue';
+  //import <<file name>> from "path"
+      //import MazerSidebar from "./components/mazer/MazerSidebar.vue";
+      //import MazerDashboard from "./components/mazer/MazerDashboard.vue";
+
+      //import StudentSidebar from "./components/student/StudentSidebar.vue";
+      //import LoginPage from './components/common/LoginPage.vue';
+      //import TeacherRegister from './components/teacher/TeacherRegister.vue';
+      
+      export default {
     data() {
       return {
         isDarkMode: false, // Default value; adjust based on the current theme
       };
     },
     components: {
-      StudentSidebar,
+      //LoginPage,
+      // StudentSidebar,
+      //MazerSidebar,
+      //MazerDashboard,
+      //TeacherRegister,
+      //HeadDepartmentRegister,
+      StudentRegister,
     },
     mounted() {
       this.initializeTheme();
@@ -101,5 +116,5 @@
 
   <style scoped>
   /* Scoped styles */
-
+  
   </style>
