@@ -55,21 +55,21 @@
           </div>
         </div>
       </nav>
-      <StudentRegister />
+      <ChooseYourRole />
     </div>
   </template>
 
 
   <script>
-//import HeadDepartmentRegister from './components/headdepartment/HeadDepartmentRegister.vue';
-  import StudentRegister from './components/student/StudentRegister.vue';
-  //import <<file name>> from "path"
+      //import HeadDepartmentRegister from './components/headdepartment/HeadDepartmentRegister.vue';
+      //import StudentRegister from './components/student/StudentRegister.vue';
+      //import <<file name>> from "path"
       //import MazerSidebar from "./components/mazer/MazerSidebar.vue";
       //import MazerDashboard from "./components/mazer/MazerDashboard.vue";
-
       //import StudentSidebar from "./components/student/StudentSidebar.vue";
       //import LoginPage from './components/common/LoginPage.vue';
       //import TeacherRegister from './components/teacher/TeacherRegister.vue';
+      import ChooseYourRole from './components/common/ChooseYourRole.vue';
       
       export default {
     data() {
@@ -84,7 +84,9 @@
       //MazerDashboard,
       //TeacherRegister,
       //HeadDepartmentRegister,
-      StudentRegister,
+      //StudentRegister,
+      ChooseYourRole,
+        
     },
     mounted() {
       this.initializeTheme();

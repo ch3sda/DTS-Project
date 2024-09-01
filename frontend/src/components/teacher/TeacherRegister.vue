@@ -1,8 +1,7 @@
 <template>
   <div class="flex mt-16 justify-center items-center">
     <div class="p-64 rounded-lg shadow">
-      <div
-        class="rounded-lg dark:border-primary-blue dark:border-2 shadow grid grid-cols-2 w-full"
+      <div class="rounded-lg dark:border-primary-blue dark:border-2 shadow grid grid-cols-2 w-full"
       >
         <!-- Picside -->
         <div class="p-8 rounded-lg bg-primary-blue">
