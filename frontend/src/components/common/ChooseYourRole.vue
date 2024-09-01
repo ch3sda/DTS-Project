@@ -14,7 +14,7 @@
               <div
                 class="mb-2 input-group-password block text-2xl font-bold text-gray-900 text-center dark:text-white">Choose Your Role
             </div>
-            <label class=" text-white text-sm font-sm">
+            <label class="text-gray-600 dark:text-white text-white text-sm font-sm">
                 Please Kindly Select Your Role
             </label>
             <div class="p-8 rounded-lge">

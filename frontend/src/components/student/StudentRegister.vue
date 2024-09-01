@@ -12,7 +12,10 @@
           <div class="p-8">
             <form>
               <div
-                class="mb-16 input-group-password block text-2xl font-bold text-gray-900 text-center dark:text-white">Create a Student account</div>
+                class="text-center mb-2 input-group-password block text-2xl font-bold text-gray-900 text-center dark:text-white">Create a Student account</div>
+                <label class="flex mb-16 justify-center text-gray-600 dark:text-white text-white text-sm font-sm">
+                  Please Fill all the form
+                </label>
                 <div class="grid gap-6 md:grid-cols-2">
                   <div>
                     <label
