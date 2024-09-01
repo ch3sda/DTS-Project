@@ -10,13 +10,13 @@
                         </svg>
                     </div>
                         <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required />
-                        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-primary-blue hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-my-blue-2 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-primary-blue hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-my-blue-2 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Search
                         </button>   
                 </div>
 
                     <!-- FIlter -->
-                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-primary-blue hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm text-center inline-flex items-center dark:bg-my-blue-2 p-4 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-primary-blue hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm text-center inline-flex items-center dark:bg-my-blue-2 p-4 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                         <svg class="flex-shrink-0 w-6 h-6 text-white-500 transition duration-75 dark:text-white " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
                             <path d="M431.33-120v-230H498v82h342v66.67H498V-120h-66.67ZM120-201.33V-268h244.67v66.67H120Zm178-164v-81.34H120v-66.66h178V-596h66.67v230.67H298Zm133.33-81.34v-66.66H840v66.66H431.33Zm164-163.33v-230H662v81.33h178V-692H662v82h-66.67ZM120-692v-66.67h408.67V-692H120Z"/>
                         </svg>
@@ -48,7 +48,7 @@
                         <th scope="col" class="px-6 py-3">
                             ID
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" class="px-6 md:px-1 py-3">
                             Document name
                         </th>
                         <th scope="col" class="px-6 py-3">
@@ -67,45 +67,75 @@
                 </thead>
                 <tbody>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            Apple MacBook Pro 17"
+                        <th scope="row" class="px-6 py-10 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            02
                         </th>
-                        <td class="px-6 py-4">
-                            Silver
+                        <td class="px-6 md:px-1 py-4">
+                            Permission Letter
                         </td>
                         <td class="px-6 py-4">
-                            Laptop
+                            07/20/2024
                         </td>
                         <td class="px-6 py-4">
-                            $2999
+                            <span class="bg-my-yellow text-white text-sm font-medium me-2 px-5 py-1.5 rounded dark:bg-my-yellow dark:text-white">
+                                Pending
+                            </span>
+                        </td>
+                        <td class="px-6 py-4">
+                            --/--/----
+                        </td>
+                        <td class="px-6 py-4">
+                            <button type="button" class="text-white bg-primary-blue hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-700">
+                                Track
+                            </button>   
                         </td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            Microsoft Surface Pro
+                        <th scope="row" class="px-6 py-10 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            03
                         </th>
-                        <td class="px-6 py-4">
-                            White
+                        <td class="px-6 md:px-1 py-4">
+                            Permission Letter
                         </td>
                         <td class="px-6 py-4">
-                            Laptop PC
+                            07/20/2024
                         </td>
                         <td class="px-6 py-4">
-                            $1999
+                            <span class="bg-my-red text-white text-sm font-medium me-2 px-5 py-1.5 rounded dark:bg-my-red dark:text-white">
+                                Decliend
+                            </span>
+                        </td>
+                        <td class="px-6 py-4">
+                            07/20/2024
+                        </td>
+                        <td class="px-6 py-4">
+                            <button type="button" class="text-white bg-primary-blue hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-700">
+                                Track
+                            </button>   
                         </td>
                     </tr>
-                    <tr class="bg-white dark:bg-gray-800">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            Magic Mouse 2
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="px-6 py-10 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            01
                         </th>
-                        <td class="px-6 py-4">
-                            Black
+                        <td class="px-6 md:px-1 py-4">
+                            Permission Letter
                         </td>
                         <td class="px-6 py-4">
-                            Accessories
+                            07/20/2024
                         </td>
                         <td class="px-6 py-4">
-                            $99
+                            <span class="bg-my-green text-white text-sm font-medium me-2 px-5 py-1.5 rounded dark:bg-my-green dark:text-white">
+                                Approved
+                            </span>
+                        </td>
+                        <td class="px-6 py-4">
+                            07/20/2024
+                        </td>
+                        <td class="px-6 py-4">
+                            <button type="button" class="text-white bg-primary-blue hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-700">
+                                Track
+                            </button>   
                         </td>
                     </tr>
                 </tbody>
