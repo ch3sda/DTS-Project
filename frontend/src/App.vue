@@ -56,9 +56,9 @@
         </div>
       </nav>
       <!-- <StudentSidebar /> -->
-      <MazerSidebar />
+      <!-- <StudentSidebar /> -->
       <div class="p-4 sm:ml-64">
-         <MazerTrack />
+         <TeacherDashboard />
       </div>
     </div>
   </template>
@@ -76,16 +76,16 @@
 
 
   //Mazer Part
-  import MazerSidebar from "./components/mazer/MazerSidebar.vue";
+  // import MazerSidebar from "./components/mazer/MazerSidebar.vue";
   // import MazerDashboard from "./components/mazer/MazerDashboard.vue";
   // import MazerDocument from "./components/mazer/MazerDocument.vue";
   // import MazerNotification from "./components/mazer/MazerNotification.vue";
-  import MazerTrack from "./components/mazer/MazerTrack.vue";
+  // import MazerTrack from "./components/mazer/MazerTrack.vue";
   // import MazerIncoming from "./components/mazer/MazerIncoming.vue";
 
   //Teacher Part
   // import TeacherSidebar from "./components/teacher/TeacherSidebar.vue";
-  // import TeacherDashboard from "./components/teacher/TeacherDashboard.vue";
+  import TeacherDashboard from "./components/teacher/TeacherDashboard.vue";
   // import TeacherIncoming from "./components/teacher/TeacherIncoming.vue";
   // import TeacherLog from "./components/teacher/TeacherLog.vue";
 
@@ -112,16 +112,16 @@
 
 
       // Mazer //
-      MazerSidebar,
+      // MazerSidebar,
       // MazerDashboard,
       // MazerDocument,
       // MazerNotification,
-      MazerTrack,
+      // MazerTrack,
       // MazerIncoming,
 
       // Teacher //
       // TeacherSidebar,
-      // TeacherDashboard,
+      TeacherDashboard,
       // TeacherIncoming,
       // TeacherLog,
       
