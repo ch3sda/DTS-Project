@@ -55,10 +55,9 @@
           </div>
         </div>
       </nav>
-      <!-- <StudentSidebar /> -->
-      <!-- <StudentSidebar /> -->
+      <StudentSidebar />
       <div class="p-4 sm:ml-64">
-         <TeacherDashboard />
+         <StudentTrack />
       </div>
     </div>
   </template>
@@ -68,11 +67,11 @@
   //import <<file name>> from "path"
 
   //Student Part
-  // import StudentSidebar from "./components/student/StudentSidebar.vue";
+  import StudentSidebar from "./components/student/StudentSidebar.vue";
   // import StudentDashboard from "./components/student/StudentDashboard.vue";
   // import StudentDocument from "./components/student/StudentDocument.vue";
   // import StudentNotification from "./components/student/StudentNotification.vue";
-  // import StudentTrack from "./components/student/StudentTrack.vue";
+  import StudentTrack from "./components/student/StudentTrack.vue";
 
 
   //Mazer Part
@@ -85,7 +84,7 @@
 
   //Teacher Part
   // import TeacherSidebar from "./components/teacher/TeacherSidebar.vue";
-  import TeacherDashboard from "./components/teacher/TeacherDashboard.vue";
+  // import TeacherDashboard from "./components/teacher/TeacherDashboard.vue";
   // import TeacherIncoming from "./components/teacher/TeacherIncoming.vue";
   // import TeacherLog from "./components/teacher/TeacherLog.vue";
 
@@ -104,11 +103,11 @@
     },
     components: {
       // Student //
-      // StudentSidebar,
+      StudentSidebar,
       // StudentDashboard,
       // StudentDocument,
       // StudentNotification,
-      // StudentTrack,
+      StudentTrack,
 
 
       // Mazer //
@@ -121,7 +120,7 @@
 
       // Teacher //
       // TeacherSidebar,
-      TeacherDashboard,
+      // TeacherDashboard,
       // TeacherIncoming,
       // TeacherLog,
       
