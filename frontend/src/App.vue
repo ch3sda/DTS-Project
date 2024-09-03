@@ -57,7 +57,7 @@
       </nav>
       <StudentSidebar />
       <div class="p-4 sm:ml-64">
-         <StudentTrack />
+         <StudentDocument />
       </div>
     </div>
   </template>
@@ -69,9 +69,9 @@
   //Student Part
   import StudentSidebar from "./components/student/StudentSidebar.vue";
   // import StudentDashboard from "./components/student/StudentDashboard.vue";
-  // import StudentDocument from "./components/student/StudentDocument.vue";
+  import StudentDocument from "./components/student/StudentDocument.vue";
   // import StudentNotification from "./components/student/StudentNotification.vue";
-  import StudentTrack from "./components/student/StudentTrack.vue";
+  // import StudentTrack from "./components/student/StudentTrack.vue";
 
 
   //Mazer Part
@@ -105,9 +105,9 @@
       // Student //
       StudentSidebar,
       // StudentDashboard,
-      // StudentDocument,
+      StudentDocument,
       // StudentNotification,
-      StudentTrack,
+      // StudentTrack,
 
 
       // Mazer //
