@@ -55,9 +55,9 @@
           </div>
         </div>
       </nav>
-      <StudentSidebar />
+      <HeadDepartmentSidebar />
       <div class="p-4 sm:ml-64">
-         <StudentDocument />
+         <HeadDepartmentLog />
       </div>
     </div>
   </template>
@@ -67,9 +67,9 @@
   //import <<file name>> from "path"
 
   //Student Part
-  import StudentSidebar from "./components/student/StudentSidebar.vue";
+  // import StudentSidebar from "./components/student/StudentSidebar.vue";
   // import StudentDashboard from "./components/student/StudentDashboard.vue";
-  import StudentDocument from "./components/student/StudentDocument.vue";
+  // import StudentDocument from "./components/student/StudentDocument.vue";
   // import StudentNotification from "./components/student/StudentNotification.vue";
   // import StudentTrack from "./components/student/StudentTrack.vue";
 
@@ -89,10 +89,10 @@
   // import TeacherLog from "./components/teacher/TeacherLog.vue";
 
   //HeadDepartment Part
-  // import HeadDepartmentSidebar from "./components/headdepartment/HeadDepartmentSidebar.vue";
+  import HeadDepartmentSidebar from "./components/headdepartment/HeadDepartmentSidebar.vue";
   // import HeadDepartmentDashboard from "./components/headdepartment/HeadDepartmentDashboard.vue";
   // import HeadDepartmentIncoming from "./components/headdepartment/HeadDepartmentIncoming.vue";
-  // import HeadDepartmentLog from "./components/headdepartment/HeadDepartmentLog.vue";
+  import HeadDepartmentLog from "./components/headdepartment/HeadDepartmentLog.vue";
 
 
   export default {
@@ -103,9 +103,9 @@
     },
     components: {
       // Student //
-      StudentSidebar,
+      // StudentSidebar,
       // StudentDashboard,
-      StudentDocument,
+      // StudentDocument,
       // StudentNotification,
       // StudentTrack,
 
@@ -125,10 +125,10 @@
       // TeacherLog,
       
       // HeadDepartment //
-      // HeadDepartmentSidebar,
+      HeadDepartmentSidebar,
       // HeadDepartmentDashboard,
       // HeadDepartmentIncoming,
-      // HeadDepartmentLog,
+      HeadDepartmentLog,
     },
     mounted() {
       this.initializeTheme();
