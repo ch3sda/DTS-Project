@@ -12,12 +12,11 @@ StudentDashboard
 
 ModalDocument
 SubmitAlert
-
+TrackingSubmit
 
 # Unfinished
 
 Help
-TrackingModal
 TrackingUser
 UserSetting
 UserProfile
