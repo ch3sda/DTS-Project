@@ -1,6 +1,12 @@
 <template>
     <div class="mt-16 w-full">
-        <div class="max-w-md p-4 mt-24 mb-12 bg-white dark:border-2 border dark:border-gray-700 dark:bg-transparent shadow rounded-lg">
+        <div class="grid grid-cols-1 p-4 gap-4">
+            <h3 class="block text-4xl md:text-5xl font-bold text-primary-blue dark:text-white">
+                Track
+            </h3>
+        </div>
+        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+            <div class="max-w-md p-4 mb-12 bg-white dark:border-2 border dark:border-gray-700 dark:bg-transparent shadow rounded-lg">
             <form class="flex gap-4">   
                 <label for="default-search" class="mb-2text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                 <div class="w-full relative">
@@ -140,6 +146,7 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
         </div>
     </div>
 </template>
