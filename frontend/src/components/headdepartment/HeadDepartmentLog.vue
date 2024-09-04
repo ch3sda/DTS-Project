@@ -1,9 +1,7 @@
 <template>
-    <div class="mt-14  w-full">
-        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700"> 
+    <div class="mt-14 w-full">
         <!--Search box-->
-            <div>
-                <div class="max-w-md p-4 mt-12 mb-8 bg-white dark:border-2 border dark:border-gray-700 dark:bg-transparent shadow rounded-lg">
+            <div class="max-w-md p-4 mt-24 mb-12 bg-white dark:border-2 border dark:border-gray-700 dark:bg-transparent shadow rounded-lg">
                     <form class="flex gap-4">   
                         <label for="default-search" class="mb-2text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                         <div class="w-full relative">
@@ -43,7 +41,6 @@
                                 </ul>
                         </div>
                     </form>
-                </div>
             </div>
             <!--Check box-->
             <div class="flex mb-4 gap-16 md:gap-32">
@@ -62,19 +59,19 @@
                         </button>
                     </div>
                 </div> 
-            </div>       
-            <!-- sm , medium , semibold , bold-->
+            </div>   
+                
             <div class="relative shadow rounded-lg overflow-x-auto">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <thead class="text-xs text-white uppercase bg-primary-blue dark:bg-gray-700 dark:text-gray-400">
                         <tr>
                             <th scope="col" class="px-6 py-3">
                                 Other
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Action
+                                Subject
                             </th>
-                            <th scope="col" class="px-6 py-3 ">
+                            <th scope="col" class="px-6 py-3">
                                 Description
                             </th>
                             <th scope="col" class="px-6 py-3">
@@ -84,7 +81,7 @@
                     </thead>
                     <tbody>
                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 dark:text-white">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white">
                                 <input id="checkbox-01" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                             </th>
                             <td class="px-6 py-4">
@@ -129,5 +126,4 @@
                 </table>
             </div>
         </div>
-    </div>
 </template>

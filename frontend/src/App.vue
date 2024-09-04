@@ -57,7 +57,7 @@
       </nav>
       <HeadDepartmentSidebar />
       <div class="p-4 sm:ml-64">
-         <HeadDepartmentLog />
+         <HeadDepartmentNotification />
       </div>
     </div>
   </template>
@@ -83,16 +83,18 @@
   // import MazerIncoming from "./components/mazer/MazerIncoming.vue";
 
   //Teacher Part
+  // import TeacherNotification from "./components/teacher/TeacherNotification.vue";
   // import TeacherSidebar from "./components/teacher/TeacherSidebar.vue";
   // import TeacherDashboard from "./components/teacher/TeacherDashboard.vue";
   // import TeacherIncoming from "./components/teacher/TeacherIncoming.vue";
   // import TeacherLog from "./components/teacher/TeacherLog.vue";
 
   //HeadDepartment Part
+  import HeadDepartmentNotification from "./components/headdepartment/HeadDepartmentNotification.vue";
   import HeadDepartmentSidebar from "./components/headdepartment/HeadDepartmentSidebar.vue";
   // import HeadDepartmentDashboard from "./components/headdepartment/HeadDepartmentDashboard.vue";
   // import HeadDepartmentIncoming from "./components/headdepartment/HeadDepartmentIncoming.vue";
-  import HeadDepartmentLog from "./components/headdepartment/HeadDepartmentLog.vue";
+  // import HeadDepartmentLog from "./components/headdepartment/HeadDepartmentLog.vue";
 
 
   export default {
@@ -119,16 +121,18 @@
       // MazerIncoming,
 
       // Teacher //
+      // TeacherNotification,
       // TeacherSidebar,
       // TeacherDashboard,
       // TeacherIncoming,
       // TeacherLog,
       
       // HeadDepartment //
+      HeadDepartmentNotification,
       HeadDepartmentSidebar,
       // HeadDepartmentDashboard,
       // HeadDepartmentIncoming,
-      HeadDepartmentLog,
+      // HeadDepartmentLog,
     },
     mounted() {
       this.initializeTheme();
