@@ -111,7 +111,28 @@ const routes = [
         path: '/teacher/notification',
         name: 'TeacherNotification',
         component: TeacherNotification
-    }
+    },
+     // Redirect from /teacher/ to /teacher/dashboard
+    {
+        path: '/teacher',
+        redirect: '/teacher/dashboard'
+    },
+    {
+        path: '/student',
+        redirect: '/student/dashboard'
+    },
+    {
+        path: '/headdepartment',
+        redirect: '/headdepartment/dashboard'
+    },
+    {
+        path: '/mazer',
+        redirect: '/mazer/dashboard'
+    },
+    {
+        path: '',
+        redirect: '/mazer/dashboard'
+    },
 ];
 
 const router = createRouter({

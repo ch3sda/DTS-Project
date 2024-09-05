@@ -56,7 +56,7 @@
             </div>
 
             <!--Check box-->
-            <div class="flex mb-4 gap-16 md:gap-32">
+            <div class="flex mb-4 w-full justify-between md:gap-32">
                 <input id="selectAllLog" type="checkbox" class="w-11 h-11 text-blue-700 bg-gray-100 border-gray-500 rounded-lg focus:ring-2 focus:outline-none focus:ring-gray-300 dark:bg-gray-700 dark:border-gray-500 dark:focus:ring-gray-900">
                 <div class="gap-4">
                     <div class="flex gap-4 w-full;">

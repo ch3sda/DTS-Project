@@ -9,11 +9,9 @@
       <apexchart type="donut" width="380" :options="chartOptions" :series="series"></apexchart>
     </div>
   </a>
-
 </template>
 
 //Graph's Formart [Approved(Green) , Declined(Red), Pending(Yellow)]
-
 
 <script>
 import VueApexCharts from 'vue3-apexcharts'

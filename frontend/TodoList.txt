@@ -1,22 +1,5 @@
-#Finished
-
-MazerDocument
-MazerSideBar
-MazerTrack
-MazerDashboard
-
-StudentDocument
-StudentSideBar
-StudentTrack
-StudentDashboard
-
-ModalDocument
-SubmitAlert
-TrackingSubmit
-
 # Unfinished
-
-Help
-TrackingUser
-UserSetting
-UserProfile
+    Help
+    TrackingUser
+    UserSetting
+    UserProfile

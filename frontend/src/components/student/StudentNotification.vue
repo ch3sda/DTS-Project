@@ -57,7 +57,7 @@
             </div>
 
             <!--Check box-->
-            <div class="flex mb-4 gap-16 md:gap-32">
+            <div class="flex mb-4 w-full justify-between md:gap-32">
                 <input id="selectAllLog" type="checkbox" class="w-11 h-11 text-blue-700 bg-gray-100 border-gray-500 rounded-lg focus:ring-2 focus:outline-none focus:ring-gray-300 dark:bg-gray-700 dark:border-gray-500 dark:focus:ring-gray-900">
                 <div class="gap-4">
                     <div class="flex gap-4 w-full;">
@@ -119,7 +119,7 @@
                                 Request Responded!
                             </td>
                             <td class="px-6 py-4">
-                                You have <span class="text-my-green font-semibold">Approved</span> HYSAVUTH CHANCHESDA for permission, on 01 / 04 / 2024. <a href="" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</a>
+                                Your permission have been <span class="text-my-green font-semibold">Approved</span>, on 01 / 04 / 2024. <router-link to="/student/track" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</router-link>
                             </td>
                             <td class="px-6 py-4">
                                 1 Apr
@@ -133,7 +133,7 @@
                                 Request Responded!
                             </td>
                             <td class="px-6 py-4">
-                                You have <span class="text-my-red font-semibold">Declined</span> HYSAVUTH CHANCHESDA for permission, on 01 / 04 / 2024. <a href="" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</a>
+                                Your permission have been <span class="text-my-red font-semibold">Declined</span>, on 01 / 04 / 2024. <router-link to="/student/track" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</router-link>
                             </td>
                             <td class="px-6 py-4">
                                 1 Apr
