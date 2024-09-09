@@ -9,7 +9,7 @@
       </h3>
     </div>
     <!-- Widget -->
-    <div class="flex justify-center border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 grid grid-cols-1 lg:grid-cols-3 p-4 sm:gap-8 md:gap-16 mb-4">
+    <div class=" justify-center border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 grid grid-cols-1 lg:grid-cols-3 p-4 sm:gap-8 md:gap-16 mb-4">
       <section class="w-full lg:col-span-2 rounded-lg bg-white dark:bg-primary-blue shadow py-8 px-4 lg:py-6">
         <h2 class="mb-4 text-xl font-medium text-primary-blue dark:text-white">
           Permission Letter
@@ -174,7 +174,7 @@
           </button>
         </div>
         <!-- Main modal -->
-        <div id="readMazerPDF" tabindex="-1" aria-hidden="true" class="p-8 md:p-0 fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 hidden">
+        <div id="readMazerPDF" tabindex="-1" aria-hidden="true" class="p-8 md:p-0 fixed inset-0 z-50 items-center justify-center bg-black bg-opacity-50 hidden">
           <div class="relative p-4 w-full h-[550px] lg:w-[60vh] md:h-[60vh] bg-white rounded-lg shadow dark:bg-gray-800 overflow-auto">
             <!-- Modal Content -->
             <div class="flex justify-between items-center border-b border-gray-200 dark:border-gray-700 pb-3 mb-3">
