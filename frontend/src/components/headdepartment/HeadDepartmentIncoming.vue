@@ -122,7 +122,11 @@
                             Incoming Permission Request!
                         </td>
                         <td class="px-6 py-4">
-                           HENG SREYLOING have request for absent permission on 01 / 04/ 2024.<a href="#" class="text-primary-blue dark:text-blue-500 font-semibold " >View here!</a>                             </td>
+                           HENG SREYLOING have request for absent permission on 01 / 04/ 2024.
+                           <button data-modal-target="request-view-modal" data-modal-toggle="request-view-modal" class="text-primary-blue dark:text-blue-500 font-semibold " >
+                                View here!
+                            </button>                          
+                        </td>
                         <td class="px-6 py-4">
                             1 Apr
                         </td>
@@ -138,7 +142,11 @@
                             Incoming Permission Request!
                         </td>
                         <td class="px-6 py-4">
-                          LANN CHANVANNY have request for absent permission on 01 / 04/ 2024.<a href="#" class="text-primary-blue dark:text-blue-500 font-semibold " >View here!</a>                             </td>
+                          LANN CHANVANNY have request for absent permission on 01 / 04/ 2024.
+                          <button data-modal-target="request-view-modal" data-modal-toggle="request-view-modal" class="text-primary-blue dark:text-blue-500 font-semibold " >
+                                View here!
+                            </button>                          
+                        </td>
                         <td class="px-6 py-4">
                             1 Apr
                         </td>
@@ -154,7 +162,11 @@
                             Incoming Permission Request!
                         </td>
                         <td class="px-6 py-4">
-                           HYSAVUTH CHANCHESDA have request for absent permission on 01 / 04/ 2024.<a href="#" class="text-primary-blue dark:text-blue-500 font-semibold " >View here!</a>                             </td>
+                           HYSAVUTH CHANCHESDA have request for absent permission on 01 / 04/ 2024.
+                           <button data-modal-target="request-view-modal" data-modal-toggle="request-view-modal" class="text-primary-blue dark:text-blue-500 font-semibold " >
+                                View here!
+                            </button>                          
+                        </td>
                         <td class="px-6 py-4">
                             1 Apr
                         </td>
@@ -170,7 +182,11 @@
                             Incoming Permission Request!
                         </td>
                         <td class="px-6 py-4">
-                           SOPHEA DANETH have request for absent permission on 01 / 04/ 2024.<a href="#" class="text-primary-blue dark:text-blue-500 font-semibold " >View here!</a>                             </td>
+                           SOPHEA DANETH have request for absent permission on 01 / 04/ 2024.
+                           <button data-modal-target="request-view-modal" data-modal-toggle="request-view-modal" class="text-primary-blue dark:text-blue-500 font-semibold " >
+                                View here!
+                            </button>                          
+                        </td>
                         <td class="px-6 py-4">
                             1 Apr
                         </td>
@@ -186,7 +202,11 @@
                             Incoming Permission Request!
                         </td>
                         <td class="px-6 py-4">
-                           SUN RACHANA have request for absent permission on 01 / 04/ 2024.<a href="#" class="text-primary-blue dark:text-blue-500 font-semibold " >View here!</a>                             </td>
+                           SUN RACHANA have request for absent permission on 01 / 04/ 2024.
+                           <button data-modal-target="request-view-modal" data-modal-toggle="request-view-modal" class="text-primary-blue dark:text-blue-500 font-semibold " >
+                                View here!
+                            </button>                          
+                        </td>
                         <td class="px-6 py-4">
                             1 Apr
                         </td>
@@ -194,6 +214,145 @@
                 </tbody>
             </table>
         </div>
+        </div>
+        
+        <!-- Main modal -->
+        <div id="request-view-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                <!-- Modal content -->
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <!-- Modal header -->
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="font-bold text-xl text-primary-blue dark:text-white">
+                            Permission Request
+                        </h3>
+                        <button data-modal-toggle="request-view-modal" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="p-4 md:p-5">
+                        <div class="p-4">
+                            <iframe 
+                                class="w-full h-[450px] rounded-lg shadow" 
+                                src="https://drive.google.com/file/d/1ql-1e_BdJtD2xBOthh16VeS1TFnHxHtA/preview" 
+                                frameborder="0">
+                            </iframe>
+                        </div>
+
+                        <!-- Main Accordion: Request Information -->
+                        <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-600">
+                        <div class="border border-gray-200 dark:border-gray-600 rounded-lg" id="request-information" data-accordion="collapse">
+                            <!-- Quick Information (Open by default) -->
+                            <div class="p-4" id="request-quick-information">
+                                <h2 id="request-quick-information-head" class="flex items-center justify-between w-full">
+                                    <button type="button" class="bg-transparent dark:bg-transparent flex items-center justify-between w-full" aria-hidden="true" aria-expanded="true" data-accordion-target="#request-quick-information-body" aria-controls="request-quick-information-body">
+                                        <span class="font-semibold text-xl text-primary-blue dark:text-white">Request Information</span>
+                                        <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-primary-blue dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="request-quick-information-body" class="mt-8 space-y-6 md:space-y-4 block">
+                                    <!-- Student Information -->
+                                    <div class="flex gap-6 md:gap-24">
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Student<br><span class="font-normal text-sm md:text-base"> HYSAVUTH CHANCHESDA</span></h2>
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Gender<br><span class="font-normal text-sm md:text-base"> Male</span></h2>
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Year<br><span class="font-normal text-sm md:text-base"> 3</span></h2>
+                                    </div>
+                                    <!-- Permission Date -->
+                                    <div class="flex gap-6 md:gap-24">
+                                        <div class="flex gap-6">
+                                            <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Start Date<br><span class="font-normal text-sm md:text-base"> 04/01/2024</span></h2>
+                                            <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">End Date<br><span class="font-normal text-sm md:text-base"> 04/02/2024</span></h2>
+                                        </div>
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Total<br><span class="font-normal text-sm md:text-base"> 2 <span>Days</span></span></h2>
+                                    </div>
+                                    <!-- Teacher Involved -->
+                                    <div class="gap-6 md:gap-24">
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Teacher Involved<br><span class="font-normal text-sm md:text-base"> Toem Theara , Khim Chamroeun , Vantha</span></h2>
+                                    </div>
+                                    <!-- Permission Reason -->
+                                    <div class="gap-6 md:gap-24">
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Reason<br></h2>
+                                        <div class="text-primary-blue dark:text-white mt-2 p-2 border rounded-lg dark:border-gray-600">
+                                            <p class="font-normal text-sm md:text-base">
+                                                Greeting Teacher! I would like to ask permission for today because I have to attend a training program at NICC!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr class="h-px bg-gray-200 border-0 dark:bg-gray-600">
+
+                            <!-- Detail Information (Collapsed by default) -->
+                            <div class="p-4" id="request-detail-information">
+                                <h2 id="request-detail-information-head" class="flex items-center justify-between w-full">
+                                    <button type="button" class="bg-transparent dark:bg-transparent flex items-center justify-between w-full" aria-hidden="true"  aria-expanded="false"  data-accordion-target="#request-detail-information-body" aria-controls="request-detail-information-body">
+                                        <span class="font-semibold text-xl text-primary-blue dark:text-white">Detail Information</span>
+                                        <svg data-accordion-icon class="w-3 h-3 shrink-0 text-primary-blue dark:text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                        </svg>
+                                    </button>
+                                </h2>
+                                <div id="request-detail-information-body" class="hidden mt-8 space-y-6 md:space-y-4">
+                                    <!-- Student Information -->
+                                    <div class="flex gap-6 md:gap-24">
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Student<br><span class="font-normal text-sm md:text-base"> HYSAVUTH CHANCHESDA</span></h2>
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Gender<br><span class="font-normal text-sm md:text-base"> Male</span></h2>
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Year<br><span class="font-normal text-sm md:text-base"> 3</span></h2>
+                                    </div>
+                                    <!-- Mazer & Class -->
+                                    <div class="flex gap-6 md:gap-24">
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Mazer<br><span class="font-normal text-sm md:text-base"> LANN CHANVANNY</span></h2>
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Class<br><span class="font-normal text-sm md:text-base"> M3</span></h2>
+                                    </div>
+                                    <!-- Permission Date -->
+                                    <div class="flex gap-6 md:gap-24">
+                                        <div class="flex gap-6">
+                                            <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Start Date<br><span class="font-normal text-sm md:text-base"> 04/01/2024</span></h2>
+                                            <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">End Date<br><span class="font-normal text-sm md:text-base"> 04/02/2024</span></h2>
+                                        </div>
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Total<br><span class="font-normal text-sm md:text-base"> 2 <span>Days</span></span></h2>
+                                    </div>
+                                    <!-- Teacher Involved -->
+                                    <div class="gap-6 md:gap-24">
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Teacher Involved<br><span class="font-normal text-sm md:text-base"> Toem Theara , Khim Chamroeun , Vantha</span></h2>
+                                    </div>
+                                    <!-- H.Department & Department -->
+                                    <div class="flex gap-6 md:gap-24">
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">H.Department<br><span class="font-normal text-sm md:text-base"> Srun Sovila</span></h2>
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Department<br><span class="font-normal text-sm md:text-base"> ITE</span></h2>
+                                    </div>
+                                    <!-- Requested Date -->
+                                    <div class="flex gap-6 md:gap-24">
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Request date<br><span class="font-normal text-sm md:text-base"> 04/01/2024, 6:13 AM</span></h2>
+                                    </div>
+                                    <!-- Permission Reason -->
+                                    <div class="gap-6 md:gap-24">
+                                        <h2 class="text-primary-blue dark:text-white font-semibold text-base md:text-lg">Reason<br></h2>
+                                        <div class="text-primary-blue dark:text-white mt-2 p-2 border rounded-lg dark:border-gray-600">
+                                            <p class="font-normal text-sm md:text-base">
+                                                Greeting Teacher! I would like to ask permission for today because I have to attend a training program at NICC!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-toggle="request-view-modal" type="button" class="text-white bg-my-green hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-my-green dark:hover:bg-green-700 dark:focus:ring-green-800">Approved</button>
+                        <button data-modal-toggle="request-view-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-my-red rounded-lg border border-gray-200 hover:bg-red-800 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-my-red dark:border-gray-600 dark:hover:bg-red-700">Declined</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
