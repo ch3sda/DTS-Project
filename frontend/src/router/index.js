@@ -24,6 +24,9 @@ import TeacherDashboard from '@/components/teacher/TeacherDashboard.vue';
 import TeacherIncoming from '@/components/teacher/TeacherIncoming.vue';
 import TeacherNotification from '@/components/teacher/TeacherNotification.vue';
 
+// Common
+import WelcomePage from '@/components/common/WelcomePage.vue';
+
 const routes = [
     // Head Department
     {
@@ -112,6 +115,14 @@ const routes = [
         name: 'TeacherNotification',
         component: TeacherNotification
     },
+    // Common
+    {
+        path: '/welcome',
+        name:'WelcomePage',
+        component: WelcomePage
+    },
+
+
      // Redirect from /teacher/ to /teacher/dashboard
     {
         path: '/teacher',
@@ -131,8 +142,9 @@ const routes = [
     },
     {
         path: '',
-        redirect: '/mazer/dashboard'
+        redirect: '/welcome'
     },
+
 ];
 
 const router = createRouter({

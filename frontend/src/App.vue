@@ -1,23 +1,25 @@
   <template>
     <div id="app" class="bg-main-background dark:bg-gray-800 min-h-screen">
-      <MazerNavbar />
+      <WelcomePage />
+      <!-- <MazerNavbar />
       <MazerSidebar />
       <div class="p-4 sm:ml-64">
         <router-view />
-    </div>
+    </div> -->
     </div>
   </template>
 
 
 <script>
   //import <<file name>> from "path"
+    import WelcomePage from './components/common/WelcomePage.vue';
 
   //Student Part
   // import StudentSidebar from "./components/student/StudentSidebar.vue";
 
   //Mazer Part
-  import MazerNavbar from "./components/mazer/MazerNavbar.vue";
-  import MazerSidebar from "./components/mazer/MazerSidebar.vue";
+  // import MazerNavbar from "./components/mazer/MazerNavbar.vue";
+  // import MazerSidebar from "./components/mazer/MazerSidebar.vue";
 
   //Teacher Part
   // import TeacherSidebar from "./components/teacher/TeacherSidebar.vue";
@@ -34,12 +36,15 @@
       };
     },
     components: {
+
+      WelcomePage,
+
       // Student //
       // StudentSidebar,
 
       // Mazer //
-      MazerNavbar,
-      MazerSidebar,
+      // MazerNavbar,
+      // MazerSidebar,
 
       // Teacher //
       // TeacherSidebar,
