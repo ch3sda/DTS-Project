@@ -55,37 +55,105 @@
           </div>
         </div>
       </nav>
+<<<<<<< HEAD
       <!-- <StudentSidebar /> -->
        <TeacherSidebar />
       <div class="p-4 sm:ml-64">
         <!--TeacherDashboard/-->
         <TeacherIncoming/>
 
+=======
+      <StudentSidebar />
+      <div class="p-4 sm:ml-64">
+         <StudentTrack />
+>>>>>>> 4b37e3fd187787ea112fe3ea0c8d0c7d5a891a26
       </div>
     </div>
 </template>
 
 
-  <script>
+<script>
   //import <<file name>> from "path"
+<<<<<<< HEAD
       //import MazerSidebar from "./components/mazer/MazerSidebar.vue";
       import TeacherSidebar from './components/teacher/TeacherSidebar.vue';
       //import TeacherDashboard from './components/teacher/TeacherDashboard.vue';
       import TeacherIncoming from './components/teacher/TeacherIncoming.vue';
       //import StudentSidebar from "./components/student/StudentSidebar.vue";
+=======
+>>>>>>> 4b37e3fd187787ea112fe3ea0c8d0c7d5a891a26
 
-      export default {
+  //Student Part
+  import StudentSidebar from "./components/student/StudentSidebar.vue";
+  // import StudentDashboard from "./components/student/StudentDashboard.vue";
+  // import StudentDocument from "./components/student/StudentDocument.vue";
+  // import StudentNotification from "./components/student/StudentNotification.vue";
+  import StudentTrack from "./components/student/StudentTrack.vue";
+
+
+  //Mazer Part
+  // import MazerSidebar from "./components/mazer/MazerSidebar.vue";
+  // import MazerDashboard from "./components/mazer/MazerDashboard.vue";
+  // import MazerDocument from "./components/mazer/MazerDocument.vue";
+  // import MazerNotification from "./components/mazer/MazerNotification.vue";
+  // import MazerTrack from "./components/mazer/MazerTrack.vue";
+  // import MazerIncoming from "./components/mazer/MazerIncoming.vue";
+
+  //Teacher Part
+  // import TeacherSidebar from "./components/teacher/TeacherSidebar.vue";
+  // import TeacherDashboard from "./components/teacher/TeacherDashboard.vue";
+  // import TeacherIncoming from "./components/teacher/TeacherIncoming.vue";
+  // import TeacherLog from "./components/teacher/TeacherLog.vue";
+
+  //HeadDepartment Part
+  // import HeadDepartmentSidebar from "./components/headdepartment/HeadDepartmentSidebar.vue";
+  // import HeadDepartmentDashboard from "./components/headdepartment/HeadDepartmentDashboard.vue";
+  // import HeadDepartmentIncoming from "./components/headdepartment/HeadDepartmentIncoming.vue";
+  // import HeadDepartmentLog from "./components/headdepartment/HeadDepartmentLog.vue";
+
+
+  export default {
     data() {
       return {
         isDarkMode: false, // Default value; adjust based on the current theme
       };
     },
     components: {
+<<<<<<< HEAD
       // StudentSidebar,
       //MazerSidebar,
       TeacherSidebar,
       TeacherIncoming,
       //TeacherDashboard,
+=======
+      // Student //
+      StudentSidebar,
+      // StudentDashboard,
+      // StudentDocument,
+      // StudentNotification,
+      StudentTrack,
+
+
+      // Mazer //
+      // MazerSidebar,
+      // MazerDashboard,
+      // MazerDocument,
+      // MazerNotification,
+      // MazerTrack,
+      // MazerIncoming,
+
+      // Teacher //
+      // TeacherSidebar,
+      // TeacherDashboard,
+      // TeacherIncoming,
+      // TeacherLog,
+      
+      // HeadDepartment //
+      // HeadDepartmentSidebar,
+      // HeadDepartmentDashboard,
+      // HeadDepartmentIncoming,
+      // HeadDepartmentLog,
+>>>>>>> 4b37e3fd187787ea112fe3ea0c8d0c7d5a891a26
     },
     mounted() {
       this.initializeTheme();
@@ -113,7 +181,7 @@
       }
     }
   };
-  </script>
+</script>
 
   <style scoped>
   /* Scoped styles */
