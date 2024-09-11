@@ -13,7 +13,7 @@
 <script>
   //import <<file name>> from "path"
     // import WelcomePage from './components/common/WelcomePage.vue';
-    import LoginPage from './components/common/LoginPage.vue';
+    import LoginPage from './components/common/SigninPage.vue';
 
   //Student Part
   // import StudentSidebar from "./components/student/StudentSidebar.vue";

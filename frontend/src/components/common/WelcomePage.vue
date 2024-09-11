@@ -1,6 +1,6 @@
 <template>
   <div class="md:p-16 bg-main-background flex justify-center items-center">
-    <div class="mt-24 md:grid bg-white md:grid-cols-2 rounded-lg shadow">
+    <div class="mt-24 lg:grid bg-white lg:grid-cols-2 rounded-lg shadow">
           <!-- Picside -->
         <div class="p-4 md:px-32 md:space-y-4 rounded-lg md:rounded-l-lg bg-primary-blue">
           <!-- FE LOGO -->
@@ -9,21 +9,21 @@
           </div>
           <!-- TEXT -->
           <div>
-            <p class="text-white text-center text-lg md:text-2xl darrk:text-white">
+            <p class="text-white text-center text-lg lg:text-2xl darrk:text-white">
               Welcome to <span class="font-semibold"> AskForLeave</span>
             </p>
           </div>
           <!-- Image -->
-          <div class="hidden md:flex justify-center items-center">
+          <div class="hidden lg:flex justify-center items-center">
             <img  src="@/assets/picture/image1.png" class="" alt="Image" />
           </div>
           <!-- Text -->
           <div>
-            <p class="hidden md:block text-center text-white"> Sign in to continoue access</p>
+            <p class="hidden lg:block text-center text-white"> Sign in to continoue access</p>
           </div> 
         </div>
         <!-- Formside -->
-        <div class="px-16 p-8 md:px-32 rounded-lg md:rounded-r-lg">
+        <div class="px-16 p-8 lg:px-32 rounded-lg lg:rounded-r-lg">
           <form class="space-y-8 md:space-y-16">
            <div class="space-y-4">
             <!-- Label -->

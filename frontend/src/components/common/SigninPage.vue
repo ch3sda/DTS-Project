@@ -28,11 +28,7 @@
                         <!-- Label -->
                         <p
                             class="mb-2 input-group-password block text-2xl font-bold text-primary-blue text-center dark:text-white">
-                            Create your account
-                        </p>
-                        <!-- Sub Label -->
-                        <p class="text-center dark:text-white text-primary-blue text-sm font-sm">
-                            Please fill all the form
+                            Sign in
                         </p>
                     </div>
                 <form class="mt-4">
@@ -46,7 +42,7 @@
                                 </svg>
                             </div>
                             <input type="text" id="input-group-email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="name@rupp.edu.kh" />
+                                placeholder="name@rupp.edu.kh"/>
                         </div>
                     </div>
                     <div class="mb-4">
@@ -74,26 +70,26 @@
                             Password?
                         </a>
                     </div>
-                    <div class="flex justify-center">
+                    <div class="mt-10 flex justify-center">
                         <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            Login
+                            Sign in 
                         </button>
                     </div>
                     <div class="text-center">
-                        <label for="remember" class="ms-2 text-sm font-medium  text-gray-900 dark:text-gray-300">Don't
+                        <label for="remember" class="ms-2 text-sm text-gray-900 dark:text-gray-300">Don't
                             have an account?
-                            <a href="#" class="ml-2 text-blue-600 hover:underline dark:text-blue-500">
-                                Sign Up
-                            </a>
                         </label>
+                        <a href="#" class=" text-blue-600 text-sm hover:underline dark:text-blue-500">
+                            Sign Up
+                        </a>
                     </div>
                     <div class="text-center">
-                        <label for="remember" class=" text-sm font-medium  text-gray-900 dark:text-gray-300">
+                        <label for="remember" class="text-sm  text-gray-900 dark:text-gray-300">
                             Read
-                            <a href="#" class="ml-2 text-blue-600 hover:underline dark:text-blue-500">term and
-                                conditions
-                            </a>
                         </label>
+                        <a href="#" class="text-sm text-blue-600 hover:underline dark:text-blue-500">term and
+                            conditions
+                        </a>
                     </div>
                 </form>
             </div>
