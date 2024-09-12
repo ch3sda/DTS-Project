@@ -119,13 +119,6 @@
       };
     },
     components: {
-<<<<<<< HEAD
-      // StudentSidebar,
-      //MazerSidebar,
-      TeacherSidebar,
-      TeacherIncoming,
-      //TeacherDashboard,
-=======
       // Student //
       StudentSidebar,
       // StudentDashboard,
@@ -153,7 +146,6 @@
       // HeadDepartmentDashboard,
       // HeadDepartmentIncoming,
       // HeadDepartmentLog,
->>>>>>> 4b37e3fd187787ea112fe3ea0c8d0c7d5a891a26
     },
     mounted() {
       this.initializeTheme();
