@@ -59,7 +59,7 @@
             <!--Check box-->
             <div class="flex mb-4 w-full justify-between md:gap-32">
                 <input id="selectAllLog" type="checkbox" class="w-11 h-11 text-blue-700 bg-gray-100 border-gray-500 rounded-lg focus:ring-2 focus:outline-none focus:ring-gray-300 dark:bg-gray-700 dark:border-gray-500 dark:focus:ring-gray-900">
-                <div class="gap-4 md:gap-4">
+                <div class="gap-4">
                     <div class="flex gap-4 w-full;">
                         <button id="approve" class="gap-2 hover:text-white text-primary-blue bg-gray-100 border border-gray-500 hover:bg-green-500 hover:border-blue-500 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center dark:bg-gray-700 dark:text-white dark:hover:bg-green-600 dark:focus:ring-gray-900" type="button">
                             <svg class="flex-shrink-0 w-6 h-6 transition duration-75 group-hover:text-white dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -119,7 +119,7 @@
                                 Request Responded!
                             </td>
                             <td class="px-6 py-4">
-                                You have <span class="text-my-green font-semibold">Approved</span> HYSAVUTH CHANCHESDA for permission, on 01 / 04 / 2024. <router-link to="/mazer/track" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</router-link>
+                                You have <span class="text-my-green font-semibold">Approved</span> HYSAVUTH CHANCHESDA for permission, on 01 / 04 / 2024. <a href="" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</a>
                             </td>
                             <td class="px-6 py-4">
                                 1 Apr
@@ -133,49 +133,7 @@
                                 Request Responded!
                             </td>
                             <td class="px-6 py-4">
-                                You have <span class="text-my-red font-semibold">Declined</span> HYSAVUTH CHANCHESDA for permission, on 01 / 04 / 2024. <router-link to="/mazer/track" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</router-link>
-                            </td>
-                            <td class="px-6 py-4">
-                                1 Apr
-                            </td>
-                        </tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white">
-                                <input id="checkbox-01" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            </th>
-                            <td class="px-6 py-4">
-                                Request Responded!
-                            </td>
-                            <td class="px-6 py-4">
-                                Your permission have been <span class="text-my-green font-semibold">Approved</span>, on 01 / 04 / 2024. <router-link to="/mazer/track" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</router-link>
-                            </td>
-                            <td class="px-6 py-4">
-                                1 Apr
-                            </td>
-                        </tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white">
-                                <input id="checkbox-02" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                            </th>
-                            <td class="px-6 py-4">
-                                Request Responded!
-                            </td>
-                            <td class="px-6 py-4">
-                                Your permission have been <span class="text-my-red font-semibold">Declined</span>, on 01 / 04 / 2024. <router-link to="/mazer/track" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</router-link>
-                            </td>
-                            <td class="px-6 py-4">
-                                1 Apr
-                            </td>
-                        </tr>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                <input id="checkbox-03" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">                       
-                            </th>
-                            <td class="px-6 py-4">
-                                System Message!
-                            </td>
-                            <td class="px-6 py-4">
-                                You have been selected as Mazer of the class, Here is a toturial for Mazer's privilege <a href="" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</a>
+                                You have <span class="text-my-red font-semibold">Declined</span> HYSAVUTH CHANCHESDA for permission, on 01 / 04 / 2024. <a href="" class="text-primary-blue dark:text-blue-500 font-semibold">View here!</a>
                             </td>
                             <td class="px-6 py-4">
                                 1 Apr
