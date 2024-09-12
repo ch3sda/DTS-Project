@@ -1,11 +1,12 @@
   <template>
     <div id="app" class="bg-main-background dark:bg-gray-800 min-h-screen">
-      <LoginPage />
+      <!-- <LoginPage /> -->
       <!-- <MazerNavbar />
       <MazerSidebar />
       <div class="p-4 sm:ml-64">
         <router-view />
     </div> -->
+    <router-view />
     </div>
   </template>
 
@@ -13,7 +14,7 @@
 <script>
   //import <<file name>> from "path"
     // import WelcomePage from './components/common/WelcomePage.vue';
-    import LoginPage from './components/common/SigninPage.vue';
+    // import LoginPage from './components/common/SigninPage.vue';
 
   //Student Part
   // import StudentSidebar from "./components/student/StudentSidebar.vue";
@@ -38,7 +39,7 @@
     },
     components: {
 
-      LoginPage,
+      // LoginPage,
       // WelcomePage,
 
       // Student //

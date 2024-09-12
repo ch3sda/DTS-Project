@@ -1,6 +1,6 @@
 <template>
-    <div class="md:p-16md:p-16 bg-main-background dark:bg-gray-800 flex justify-center items-center">
-        <div class="mt-24 lg:grid dark:border dark:border-gray-600 dark:border-dashed dark:bg-gray-800 md:grid-cols-2 rounded-lg shadow">
+    <div class="md:p-16 bg-main-background flex justify-center items-center">
+        <div class="mt-24 lg:grid bg-white md:grid-cols-2 rounded-lg shadow">
             <!-- Picside -->
             <div class="p-4 md:px-32 md:space-y-4 rounded-lg md:rounded-l-lg bg-primary-blue">
                 <!-- FE LOGO -->
@@ -24,12 +24,13 @@
             </div>
             <!-- Formside -->
             <div class="px-16 p-8 md:px-32 rounded-lg md:rounded-r-lg">
-                <div class="mb-8 md:mb-16">
+                <div class="space-y-4">
                         <!-- Label -->
-                        <p class="mb-2 input-group-password block text-base font-semibold md:text-2xl md:font-bold text-primary-blue text-center dark:text-white">
-                            Sign In
+                        <p
+                            class="mb-2 input-group-password block text-2xl font-bold text-primary-blue text-center dark:text-white">
+                            Sign in
                         </p>
-                </div>
+                    </div>
                 <form class="mt-4">
                     <label for="input-group-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                     <div class="mb-4">
@@ -70,7 +71,7 @@
                         </a>
                     </div>
                     <div class="mt-10 flex justify-center">
-                        <button  @click="goToDashboard" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Sign in 
                         </button>
                     </div>
@@ -95,13 +96,3 @@
         </div>
     </div>
 </template>
-
-<script>
-export default {
-  methods: {
-    goToDashboard() {
-      this.$router.push({ name: 'StudentDashboard' });
-    }
-  }
-}
-</script>
