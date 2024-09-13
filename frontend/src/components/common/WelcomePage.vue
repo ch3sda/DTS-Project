@@ -1,6 +1,6 @@
 <template>
-  <div class="md:p-16 bg-main-background flex justify-center items-center">
-    <div class="mt-24 lg:grid bg-white lg:grid-cols-2 rounded-lg shadow">
+  <div class="md:p-16 bg-main-background dark:bg-gray-800 flex justify-center items-center">
+    <div class=" dark:border dark:border-gray-600 dark:border-dashed dark:bg-gray-800 mt-24 lg:grid bg-white lg:grid-cols-2 rounded-lg shadow">
           <!-- Picside -->
         <div class="p-4 md:px-32 md:space-y-4 rounded-lg md:rounded-l-lg bg-primary-blue">
           <!-- FE LOGO -->
@@ -23,7 +23,7 @@
           </div> 
         </div>
         <!-- Formside -->
-        <div class="px-16 p-8 lg:px-32 rounded-lg lg:rounded-r-lg">
+        <div class="px-16 bg-main-background dark:bg-gray-800 p-8 lg:px-32 rounded-lg lg:rounded-r-lg">
           <form class="space-y-8 md:space-y-16">
            <div class="space-y-4">
             <!-- Label -->
@@ -43,18 +43,18 @@
             <div class="space-y-3 md:space-y-4">
               <!-- User Select -->
               <div class="max-w-sm mx-auto">
-                <select id="Student"
+                <select  v-model="selectedRole"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                   <option value="Student">Student</option>
-                  <option value="Headdepartment"> Headdeprtment</option>
+                  <option value="HeadDepartment">HeadDeprtment</option>
                   <option value="Teacher">Teacher</option>
                 </select>
               </div>
               <!-- Continue -->
               <div class="flex justify-center">
-                <button class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  Continoue as a student
-                </button>
+                <button @click="continueAs" class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Continue as {{ selectedRole }}
+                  </button>
               </div>
               <!-- Term&con -->
               <div class="text-center mt-30">
@@ -67,3 +67,33 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      selectedRole: "Student" // Default role selection (could be set dynamically)
+    };
+  },
+  methods: {
+    continueAs() {
+      this.selectedRole = this.selectedRole.toLowerCase();
+      console.log('Selected Role:', this.selectedRole); // Debugging
+        // Dynamic routing based on role selection
+      switch (this.selectedRole) {
+        case "student":
+          this.$router.push({ name: 'StudentSignUp' });
+          break;
+        case "headdepartment":
+          this.$router.push({ name: 'HeadDepartmentSignUp' });
+          break;
+        case "teacher":
+          this.$router.push({ name: 'TeacherSignUp' });
+          break;
+        default:
+          this.$router.push({ name: 'WelcomePage' }); // Default redirect if role is not recognized
+      }
+    }
+  }
+};
+</script>
