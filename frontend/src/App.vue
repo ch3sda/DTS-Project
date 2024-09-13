@@ -1,33 +1,32 @@
   <template>
     <div id="app" class="bg-main-background dark:bg-gray-800 min-h-screen">
-      <LoginPage />
-      <!-- <MazerNavbar />
-      <MazerSidebar />
-      <div class="p-4 sm:ml-64">
-        <router-view />
-    </div> -->
+      <!-- Conditionally render Navbar based on the user's role -->
+      <component :is="getNavbarComponent" />
+
+      <div class="flex">
+        <!-- Conditionally render Sidebar based on the user's role -->
+        <component :is="getSidebarComponent" />
+
+        <!-- Main Content (router-view for the dashboard) -->
+        <div class="p-4 sm:ml-64">
+          <router-view />
+        </div>
+      </div>
     </div>
   </template>
 
 
 <script>
   //import <<file name>> from "path"
-    // import WelcomePage from './components/common/WelcomePage.vue';
-    import LoginPage from './components/common/SigninPage.vue';
+    import StudentSidebar from './components/student/StudentSidebar.vue';
+    import TeacherSidebar from './components/teacher/TeacherSidebar.vue';
+    import MazerSidebar from './components/mazer/MazerSidebar.vue';
+    import HeadDepartmentSidebar from './components/headdepartment/HeadDepartmentSidebar.vue';
 
-  //Student Part
-  // import StudentSidebar from "./components/student/StudentSidebar.vue";
-
-  //Mazer Part
-  // import MazerNavbar from "./components/mazer/MazerNavbar.vue";
-  // import MazerSidebar from "./components/mazer/MazerSidebar.vue";
-
-  //Teacher Part
-  // import TeacherSidebar from "./components/teacher/TeacherSidebar.vue";
-
-
-  //HeadDepartment Part
-  // import HeadDepartmentSidebar from "./components/headdepartment/HeadDepartmentSidebar.vue";
+    import StudentNavbar from './components/student/StudentNavbar.vue';
+    import TeacherNavbar from './components/teacher/TeacherNavbar.vue';
+    import MazerNavbar from './components/mazer/MazerNavbar.vue';
+    import HeadDepartmentNavbar from './components/headdepartment/HeadDepartmentNavbar.vue';
 
   export default {
     name: 'app',
@@ -38,21 +37,6 @@
     },
     components: {
 
-      LoginPage,
-      // WelcomePage,
-
-      // Student //
-      // StudentSidebar,
-
-      // Mazer //
-      // MazerNavbar,
-      // MazerSidebar,
-
-      // Teacher //
-      // TeacherSidebar,
-  
-      // HeadDepartment //
-      // HeadDepartmentSidebar,
 
     },
     mounted() {
@@ -79,7 +63,37 @@
           });
         }
       }
+    },
+    computed: {
+    getSidebarComponent() {
+      switch (this.userRole) {
+        case 'teacher':
+          return TeacherSidebar;
+        case 'mazer':
+          return MazerSidebar;
+        case 'headdepartment':
+          return HeadDepartmentSidebar;
+        case 'student':
+          return StudentSidebar;
+        default :
+          return null;
+      }
+    },
+    getNavbarComponent() {
+      switch (this.userRole) {
+        case 'teacher':
+          return TeacherNavbar;
+        case 'mazer':
+          return MazerNavbar;
+        case 'headdepartment':
+          return HeadDepartmentNavbar;
+        case 'student':
+          return StudentNavbar;
+        default :
+          return null;
+      }
     }
+  }
   };
 </script>
 
