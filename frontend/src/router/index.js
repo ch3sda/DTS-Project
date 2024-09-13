@@ -26,38 +26,40 @@ import TeacherSignUp from '@/components/teacher/TeacherSignUp.vue';
 
 import WelcomePage from '@/components/common/WelcomePage.vue';
 import SigninPage from '@/components/common/SigninPage.vue';
+import Forbidden from '@/components/common/ForbiddenPage.vue';
 
 // Define routes
 const routes = [
     // Head Department
-    { path: '/headdepartment/notification', name: 'HeadDepartmentNotification', component: HeadDepartmentNotification, meta: { requiresAuth: false , role: 'headdepartment' }},
-    { path: '/headdepartment/dashboard', name: 'HeadDepartmentDashboard', component: HeadDepartmentDashboard, meta: { requiresAuth: false , role: 'headdepartment' }},
-    { path: '/headdepartment/incoming', name: 'HeadDepartmentIncoming', component: HeadDepartmentIncoming, meta: { requiresAuth: false , role: 'headdepartment' }},
+    { path: '/headdepartment/notification', name: 'HeadDepartmentNotification', component: HeadDepartmentNotification, meta: { requiresAuth: true , role: 'headdepartment' }},
+    { path: '/headdepartment/dashboard', name: 'HeadDepartmentDashboard', component: HeadDepartmentDashboard, meta: { requiresAuth: true , role: 'headdepartment' }},
+    { path: '/headdepartment/incoming', name: 'HeadDepartmentIncoming', component: HeadDepartmentIncoming, meta: { requiresAuth: true , role: 'headdepartment' }},
     { path: '/headdepartment/signup', name: 'HeadDepartmentSignUp', component: HeadDepartmentSignUp, meta: { requiresAuth: false , role: 'headdepartment' }},
 
     // Mazer
-    { path: '/mazer/dashboard', name: 'MazerDashboard', component: MazerDashboard, meta: { requiresAuth: false , role: 'mazer' }},
-    { path: '/mazer/document', name: 'MazerDocument', component: MazerDocument, meta: { requiresAuth: false , role: 'mazer' }},
-    { path: '/mazer/incoming', name: 'MazerIncoming', component: MazerIncoming, meta: { requiresAuth: false , role: 'mazer' }},
-    { path: '/mazer/notification', name: 'MazerNotification', component: MazerNotification, meta: { requiresAuth: false , role: 'mazer' }},
-    { path: '/mazer/track', name: 'MazerTrack', component: MazerTrack, meta: { requiresAuth: false , role: 'mazer' }},
+    { path: '/mazer/dashboard', name: 'MazerDashboard', component: MazerDashboard, meta: { requiresAuth: true , role: 'mazer' }},
+    { path: '/mazer/document', name: 'MazerDocument', component: MazerDocument, meta: { requiresAuth: true , role: 'mazer' }},
+    { path: '/mazer/incoming', name: 'MazerIncoming', component: MazerIncoming, meta: { requiresAuth: true , role: 'mazer' }},
+    { path: '/mazer/notification', name: 'MazerNotification', component: MazerNotification, meta: { requiresAuth: true , role: 'mazer' }},
+    { path: '/mazer/track', name: 'MazerTrack', component: MazerTrack, meta: { requiresAuth: true , role: 'mazer' }},
 
     // Student
-    { path: '/student/dashboard', name: 'StudentDashboard', component: StudentDashboard, meta: { requiresAuth: false , role: 'student' }},
-    { path: '/student/document', name: 'StudentDocument', component: StudentDocument, meta: { requiresAuth: false , role: 'student' }},
-    { path: '/student/notification', name: 'StudentNotification', component: StudentNotification, meta: { requiresAuth: false , role: 'student' }},
-    { path: '/student/track', name: 'StudentTrack', component: StudentTrack, meta: { requiresAuth: false , role: 'student' }},
+    { path: '/student/dashboard', name: 'StudentDashboard', component: StudentDashboard, meta: { requiresAuth: true , role: 'student' }},
+    { path: '/student/document', name: 'StudentDocument', component: StudentDocument, meta: { requiresAuth: true , role: 'student' }},
+    { path: '/student/notification', name: 'StudentNotification', component: StudentNotification, meta: { requiresAuth: true , role: 'student' }},
+    { path: '/student/track', name: 'StudentTrack', component: StudentTrack, meta: { requiresAuth: true , role: 'student' }},
     { path: '/student/signup', name: 'StudentSignUp', component: StudentSignUp, meta: { requiresAuth: false, role: 'student' }},
 
     // Teacher
-    { path: '/teacher/signup', name: 'TeacherSignUp', component: TeacherSignUp, meta: { requiresAuth: false, role: 'teacher' }},
-    { path: '/teacher/dashboard', name: 'TeacherDashboard', component: TeacherDashboard, meta: { requiresAuth: false , role: 'teacher' }},
-    { path: '/teacher/incoming', name: 'TeacherIncoming', component: TeacherIncoming, meta: { requiresAuth: false , role: 'teacher' }},
-    { path: '/teacher/notification', name: 'TeacherNotification', component: TeacherNotification, meta: { requiresAuth: false , role: 'teacher' }},
+    { path: '/teacher/signup', name: 'TeacherSignUp', component: TeacherSignUp, meta: { requiresAuth: true, role: 'teacher' }},
+    { path: '/teacher/dashboard', name: 'TeacherDashboard', component: TeacherDashboard, meta: { requiresAuth: true , role: 'teacher' }},
+    { path: '/teacher/incoming', name: 'TeacherIncoming', component: TeacherIncoming, meta: { requiresAuth: true , role: 'teacher' }},
+    { path: '/teacher/notification', name: 'TeacherNotification', component: TeacherNotification, meta: { requiresAuth: true , role: 'teacher' }},
     
     // Common
     { path: '/welcome', name: 'WelcomePage', component: WelcomePage },
     { path: '/signin', name: 'SigninPage', component: SigninPage },
+    { name: 'Forbidden', component: Forbidden},
 
     // Redirects
     { path: '/teacher/', redirect: '/teacher/dashboard' },
@@ -84,7 +86,7 @@ router.beforeEach(async (to, from, next) => {
         if (!isAuthenticated) {
             next({ name: 'SigninPage' }); // Redirect to sign-in if not authenticated
         } else if (to.meta.role && to.meta.role !== userRole) {
-            next({ name: 'WelcomePage' }); // Redirect if the user's role does not match
+            next({ name: 'Forbidden' }); // Redirect if the user's role does not match
         } else {
             next();
         }

@@ -119,10 +119,12 @@
           });
         }
       },
+
       async logout() {
         await this.$store.dispatch('logout');
         this.$router.push({ name: 'WelcomePage' }); // Change this to the route you want after logout
       }
+      
     }
   };
 </script>

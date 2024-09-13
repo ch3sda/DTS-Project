@@ -1,20 +1,17 @@
 <template>
   <div id="app" class="bg-main-background dark:bg-gray-800 min-h-screen">
-    <WelcomePage class="" />
     <!-- Conditionally render Navbar based on the user's role -->
     <component :is="getNavbarComponent" />
     <!-- Conditionally render Sidebar based on the user's role -->
     <component :is="getSidebarComponent" />
-      <!-- Main Content (router-view for the dashboard) -->
-      <div class="p-4 sm:ml-64">
-        <router-view />
-      </div>
+    <!-- Main Content (router-view for the dashboard) -->
+    <div :class="{'p-4': true, 'sm:ml-64': isLoggedIn}">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
-import WelcomePage from './components/common/WelcomePage.vue';
-
 // Importing sidebar and navbar components
 import StudentSidebar from './components/student/StudentSidebar.vue';
 import TeacherSidebar from './components/teacher/TeacherSidebar.vue';
@@ -26,8 +23,6 @@ import TeacherNavbar from './components/teacher/TeacherNavbar.vue';
 import MazerNavbar from './components/mazer/MazerNavbar.vue';
 import HeadDepartmentNavbar from './components/headdepartment/HeadDepartmentNavbar.vue';
 
-// import { mapState } from 'vuex'; // Importing mapState to access Vuex store state
-
 export default {
   name: 'app',
   data() {
@@ -35,10 +30,9 @@ export default {
       isDarkMode: false, // Default value; adjust based on the current theme
     };
   },
-components: {
-  WelcomePage,
-},
-
+  components: {
+    StudentNavbar,
+  },
   mounted() {
     this.initializeTheme();
     this.setupThemeToggle();
@@ -67,14 +61,12 @@ components: {
   computed: {
     // Mapping userRole from Vuex state
     userRole() {
-      const role = this.$store.getters.userRole;
-      console.log('User Role:', role); // Log the userRole to the console
-      return role;
+      return this.$store.getters.userRole;
     },
-    // ...mapState({
-    //   userRole: state => state.userRole,
-    // }),
-    
+    // Check if user is logged in
+    isLoggedIn() {
+      return !!this.$store.state.isAuthenticated;
+    },
     getSidebarComponent() {
       switch (this.userRole) {
         case 'teacher':
