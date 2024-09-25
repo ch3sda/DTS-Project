@@ -81,20 +81,38 @@ router.beforeEach(async (to, from, next) => {
     const userRole = store.state.userRole; // Get user role from Vuex
     await nextTick(); // Ensure state is fully updated
 
-    // Dynamic Title
-    document.title = `AskForLeave - ${to.meta.title}`;
-
-    if (to.matched.some(record => record.meta.requiresAuth)) {
-        if (!isAuthenticated) {
-            next({ name: 'SigninPage' }); // Redirect to sign-in if not authenticated
-        } else if (to.meta.role && to.meta.role !== userRole) {
-            next({ name: 'Forbidden' }); // Redirect if the user's role does not match
-        } else {
-            next();
+    // If the user is authenticated and trying to access sign-in, sign-up, or welcome pages, redirect to their respective dashboard
+    if (isAuthenticated) {
+        if (to.name === 'SigninPage' || to.name === 'StudentSignUp' || to.name === 'HeadDepartmentSignUp' || to.name === 'TeacherSignUp' || to.name === 'WelcomePage') {
+            if (userRole === 'student') {
+                next({ name: 'StudentDashboard' });
+            } else if (userRole === 'headdepartment') {
+                next({ name: 'HeadDepartmentDashboard' });
+            } else if (userRole === 'teacher') {
+                next({ name: 'TeacherDashboard' });
+            } else if (userRole === 'mazer') {
+                next({ name: 'MazerDashboard' });
+            } else {
+                next({ name: 'SigninPage' }); // Fallback to sign-in if userRole is undefined
+            }
         }
-    } else {    
-        next();
     }
+        // Dynamic Title
+        document.title = `AskForLeave - ${to.meta.title}`;
+
+        if (to.matched.some(record => record.meta.requiresAuth)) {
+            // Redirect to sign-in if not authenticated and the route requires authentication
+            if (!isAuthenticated) {
+                next({ name: 'SigninPage' });
+            } else if (to.meta.role && to.meta.role !== userRole) {
+                next({ name: 'Forbidden' }); // Redirect if the user's role does not match
+            } else {
+                next();
+            }
+        } else {
+            next(); // Proceed if no authentication required
+        }
+    
 });
 
 export default router;
