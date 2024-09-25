@@ -1,6 +1,12 @@
 <template>
     <div class="mt-16 w-full">
-        <div class="max-w-md p-4 mt-24 mb-12 bg-white dark:border-2 border dark:border-gray-700 dark:bg-transparent shadow rounded-lg">
+        <div class="grid grid-cols-1 p-4 gap-4">
+            <h3 class="block text-4xl md:text-5xl font-bold text-primary-blue dark:text-white">
+                Track
+            </h3>
+        </div>
+        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+            <div class="max-w-md p-4 mb-12 bg-white dark:border-2 border dark:border-gray-700 dark:bg-transparent shadow rounded-lg">
             <form class="flex gap-4">   
                 <label for="default-search" class="mb-2text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                 <div class="w-full relative">
@@ -85,9 +91,7 @@
                             --/--/----
                         </td>
                         <td class="px-6 py-4">
-                            <button type="button" class="text-white bg-primary-blue hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-700">
-                                Track
-                            </button>   
+                            <TrackingSubmit/>
                         </td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -109,9 +113,7 @@
                             07/20/2024
                         </td>
                         <td class="px-6 py-4">
-                            <button type="button" class="text-white bg-primary-blue hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-700">
-                                Track
-                            </button>   
+                            <TrackingSubmit/>  
                         </td>
                     </tr>
                     <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
@@ -133,13 +135,23 @@
                             07/20/2024
                         </td>
                         <td class="px-6 py-4">
-                            <button type="button" class="text-white bg-primary-blue hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-700">
-                                Track
-                            </button>   
+                            <TrackingSubmit/>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        </div>
     </div>
 </template>
+
+<script>
+import TrackingSubmit from './widget/self/modal/TrackingSubmit.vue';
+
+export default{
+    components: {
+        TrackingSubmit,
+    }
+}
+
+</script>

@@ -27,7 +27,7 @@
                 <div class="mb-8 md:mb-16">
                         <!-- Label -->
                         <p class="mb-2 input-group-password block text-base font-semibold md:text-2xl md:font-bold text-primary-blue text-center dark:text-white">
-                            Create a Student Account
+                            Sign In
                         </p>
                 </div>
                 <form class="mt-4">

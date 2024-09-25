@@ -21,7 +21,7 @@
                     </svg>
 
                     <!-- Select element -->
-                    <select id="countries" class="appearance-none w-40 bg-gray-50 border border-gray-300 text-primary-blue text-sm md:text-base rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 pl-10 dark:bg-primary-blue dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500">
+                    <select id="countries" class="appearance-none bg-gray-50 border border-gray-300 text-primary-blue text-sm md:text-base rounded-lg focus:ring-gray-500 focus:border-gray-500 block w-full p-2.5 pl-10 dark:bg-primary-blue dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-500 dark:focus:border-gray-500">
                         <option selected>All time</option>
                         <option value="Yearly">Yearly</option>
                         <option value="Monthly">Monthly</option>
