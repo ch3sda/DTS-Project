@@ -7,8 +7,8 @@
         </div>
 
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-                    <!--Search box-->
-                    <div class="max-w-md p-4 mb-12 bg-white dark:border-2 border dark:border-gray-700 dark:bg-transparent shadow rounded-lg">
+                <!--Search box-->
+                <div class="max-w-md p-4 mb-12 bg-white dark:border-2 border dark:border-gray-700 dark:bg-transparent shadow rounded-lg">
                     <form class="flex gap-4">   
                         <label for="default-search" class="mb-2text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                         <div class="w-full relative">

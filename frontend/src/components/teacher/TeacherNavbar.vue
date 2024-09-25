@@ -45,7 +45,7 @@
                       <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Profile</a>
                     </li>
                     <li>
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" @click.prevent="logout" role="menuitem">Sign out</a>
                     </li>
                   </ul>
                 </div>
@@ -56,7 +56,7 @@
       </nav>
 
 
-    <!-- <div class="md:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
+    <div class="md:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
         <div class="grid h-full max-w-lg grid-cols-3 mx-auto font-medium">
             <router-link to="/teacher/incoming" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
                 <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
@@ -74,7 +74,7 @@
                 </svg>
             </router-link>
         </div>
-    </div> -->
+    </div>
 
   </template>
 
@@ -115,7 +115,13 @@
             localStorage.setItem('color-theme', this.isDarkMode ? 'dark' : 'light');
           });
         }
+      },
+
+      async logout() {
+        await this.$store.dispatch('logout');
+        this.$router.push({ name: 'WelcomePage' }); // Change this to the route you want after logout
       }
+
     }
   };
 </script>

@@ -30,7 +30,7 @@
                         Create a Student Account
                     </p>
                 </div>
-                <form class="h-32 overflow-y mt-4">
+                <form class="h-auto overflow-y mt-4">
                     <label for="input-group-email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
                     <div class="mb-4">
                         <div class="relative mb-4">
@@ -82,7 +82,11 @@
 <script>
 export default {
   methods: {
-    goToDashboard() {
+    async goToDashboard() {
+      // Update Vuex store
+      await this.$store.dispatch('login', { role: 'student' });
+
+      // Navigate to dashboard
       this.$router.push({ name: 'StudentDashboard' });
     }
   }

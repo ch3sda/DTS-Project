@@ -45,7 +45,7 @@
                       <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Profile</a>
                     </li>
                     <li>
-                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Sign out</a>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-white" @click.prevent="logout"  role="menuitem">Sign out</a>
                     </li>
                   </ul>
                 </div>
@@ -118,7 +118,13 @@
             localStorage.setItem('color-theme', this.isDarkMode ? 'dark' : 'light');
           });
         }
+      },
+
+      async logout() {
+        await this.$store.dispatch('logout');
+        this.$router.push({ name: 'WelcomePage' }); // Change this to the route you want after logout
       }
+      
     }
   };
 </script>

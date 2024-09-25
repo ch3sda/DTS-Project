@@ -1,6 +1,6 @@
 <template>
   <div class="md:p-16 bg-main-background dark:bg-gray-800 flex justify-center items-center">
-    <div class=" dark:border dark:border-gray-600 dark:border-dashed dark:bg-gray-800 mt-24 lg:grid bg-white lg:grid-cols-2 rounded-lg shadow">
+    <div class="dark:border-2 dark:border-primary-blue dark:border-dashed dark:bg-gray-800 mt-24 lg:grid bg-white lg:grid-cols-2 rounded-lg shadow">
           <!-- Picside -->
         <div class="p-4 md:px-32 md:space-y-4 rounded-lg md:rounded-l-lg bg-primary-blue">
           <!-- FE LOGO -->
@@ -78,7 +78,8 @@ export default {
   methods: {
     continueAs() {
       this.selectedRole = this.selectedRole.toLowerCase();
-      // Dynamic routing based on role selection
+      console.log('Selected Role:', this.selectedRole); // Debugging
+        // Dynamic routing based on role selection
       switch (this.selectedRole) {
         case "student":
           this.$router.push({ name: 'StudentSignUp' });

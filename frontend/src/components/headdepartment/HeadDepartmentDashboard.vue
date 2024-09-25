@@ -44,6 +44,101 @@
                 <IncomingLineGraphType1 />
             </div>
          </div>
+        <!-- Label -->
+        <div class="grid grid-cols-1 p-4 gap-4">
+            <h3 for="countries" class="block text-2xl md:text-3xl font-medium text-gray-900 dark:text-white">Student's List</h3>
+        </div>
+                        <!--Search box-->
+                        <div class="max-w-md p-4 mb-12 bg-white dark:border-2 border dark:border-gray-700 dark:bg-transparent shadow rounded-lg">
+                    <form class="flex gap-4">   
+                        <label for="default-search" class="mb-2text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                        <div class="w-full relative">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                                </svg>
+                            </div>
+                                <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required />
+                                <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-primary-blue hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-my-blue-2 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Search
+                                </button>   
+                        </div>
+                    </form>
+                </div>
+        <!-- Table -->
+         <div class="relative shadow rounded-lg overflow-x-auto w-2/3 ">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-white uppercase bg-primary-blue dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Name
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Generation
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Class
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Description
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <td class="px-6 py-4">
+                                HYSAVUTH CHANCHESDA
+                            </td>
+                            <td class="px-6 py-4">
+                                G9
+                            </td>
+                            <td class="px-6 py-4">
+                                M3
+                            </td>
+                            <td class="px-6 py-4">
+                                This student had been asked for permission<span class="font-semibold text-my-red dark:text-white"> 10 </span>times.
+                                <button data-modal-target="request-view-modal" data-modal-toggle="request-view-modal" class="text-primary-blue dark:text-blue-500 font-semibold " >
+                                View here!
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <td class="px-6 py-4">
+                                LANN CHANVANNY
+                            </td>
+                            <td class="px-6 py-4">
+                                G9
+                            </td>
+                            <td class="px-6 py-4">
+                                M3
+                            </td>
+                            <td class="px-6 py-4">
+                                This student had been asked for permission<span class="font-semibold text-my-red dark:text-white"> 10 </span>times.
+                                <button data-modal-target="request-view-modal" data-modal-toggle="request-view-modal" class="text-primary-blue dark:text-blue-500 font-semibold " >
+                                View here!
+                                </button>
+                            </td>
+                        </tr>
+                        <tr class="bg-white dark:bg-gray-800">
+                            <td class="px-6 py-4">
+                                HENG SREYLOING
+                            </td>
+                            <td class="px-6 py-4">
+                                G9
+                            </td>
+                            <td class="px-6 py-4">
+                                M3
+                            </td>
+                            <td class="px-6 py-4">
+                                This student had been asked for permission<span class="font-semibold text-my-red dark:text-white"> 10 </span>times.
+                                <button data-modal-target="request-view-modal" data-modal-toggle="request-view-modal" class="text-primary-blue dark:text-blue-500 font-semibold " >
+                                View here!
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>  
+         </div>
      </div>
 </template>
 
