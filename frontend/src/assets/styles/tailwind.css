@@ -3,3 +3,4 @@
 @tailwind components;
 @tailwind utilities;
 @import "flowbite";
+@import 'flatpickr/dist/flatpickr.min.css';  /* Import Flatpickr's default styles */
