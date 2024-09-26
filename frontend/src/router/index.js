@@ -51,7 +51,7 @@ const routes = [
     { path: '/student/signup', name: 'StudentSignUp', component: StudentSignUp, meta: { title:"SignUp" ,  requiresAuth: false, role: 'student' }},
 
     // Teacher
-    { path: '/teacher/signup', name: 'TeacherSignUp', component: TeacherSignUp, meta: { title:"SignUp" , requiresAuth: true, role: 'teacher' }},
+    { path: '/teacher/signup', name: 'TeacherSignUp', component: TeacherSignUp, meta: { title:"SignUp" , requiresAuth: false, role: 'teacher' }},
     { path: '/teacher/dashboard', name: 'TeacherDashboard', component: TeacherDashboard, meta: { title:"Dashboard" , requiresAuth: true , role: 'teacher' }},
     { path: '/teacher/incoming', name: 'TeacherIncoming', component: TeacherIncoming, meta: { title:"Incoming" , requiresAuth: true , role: 'teacher' }},
     { path: '/teacher/notification', name: 'TeacherNotification', component: TeacherNotification, meta: { title:"Notification" , requiresAuth: true , role: 'teacher' }},
