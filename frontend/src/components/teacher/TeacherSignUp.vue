@@ -1,6 +1,6 @@
 <template>
     <div class="md:p-16 bg-main-background dark:bg-gray-800 flex justify-center items-center">
-        <div class="mt-24 lg:grid dark:border dark:border-gray-600 dark:border-dashed dark:bg-gray-800 md:grid-cols-2 rounded-lg shadow">
+        <div class="mt-24 bg-white lg:grid dark:border dark:border-gray-600 dark:border-dashed dark:bg-gray-800 md:grid-cols-2 rounded-lg shadow">
             <!-- Picside -->
             <div class="p-4 md:px-32 md:space-y-4 rounded-lg md:rounded-l-lg bg-primary-blue">
                 <!-- FE LOGO -->
@@ -63,7 +63,7 @@
                         <a href="#" class="text-xs md:text-sm text-blue-600 hover:underline dark:text-blue-500">Forgot Password?</a>
                     </div>
                     <div class="mt-10 flex justify-center">
-                        <button @click="goToDashboard" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign in</button>
+                        <button @click="goToDashboard" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign Up</button>
                     </div>
                     <div class="text-center">
                         <label for="remember" class="ms-2 text-sm text-gray-900 dark:text-gray-300">Don't have an account?</label>
