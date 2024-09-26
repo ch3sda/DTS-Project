@@ -23,7 +23,7 @@
           </div> 
         </div>
         <!-- Formside -->
-        <div class="px-16 bg-main-background dark:bg-gray-800 p-8 lg:px-32 rounded-lg lg:rounded-r-lg">
+        <div class="px-16 dark:bg-gray-800 p-8 lg:px-32 rounded-lg lg:rounded-r-lg">
           <form class="space-y-8 md:space-y-16">
            <div class="space-y-4">
             <!-- Label -->
