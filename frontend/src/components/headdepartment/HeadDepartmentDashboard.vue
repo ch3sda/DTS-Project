@@ -21,7 +21,7 @@
             <div class="flex gap-4 items-center justify-center rounded h-88 ">
                 <IncomingPieGraphType1 />
             </div>
-            <div class="hidden gap-4 items-center justify-center rounded h-88 ">
+            <div class=" gap-4 items-center justify-center rounded h-88 ">
                 <IncomingLineGraphType1 />
             </div>
             <div class="hidden lg:flex lg:col-span-2 gap-4 items-center justify-center rounded h-88 ">

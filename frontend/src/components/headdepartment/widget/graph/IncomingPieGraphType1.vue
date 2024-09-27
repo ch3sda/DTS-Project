@@ -1,6 +1,6 @@
 <template>
   <a class=" md:w-full w-full md:h-full block sm:p-4 p-4 bg-white border border-gray-300 rounded-lg shadow dark:bg-primary-blue dark:border-gray-700">
-    <div class="md:flex justify-between">
+    <div class="lg:flex justify-between">
         <h5 class="mb-2 text-lg font-normal md:text-2xl tracking-tight text-primary-blue dark:text-white">Donut Graph<br>
         <span class="mb-2 text-xs font-thin md:text-lg tracking-tight text-gray-500 dark:text-gray-400"> 
           All of Incoming requests and status. 
