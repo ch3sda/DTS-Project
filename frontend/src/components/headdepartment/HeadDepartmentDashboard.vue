@@ -15,15 +15,15 @@
         </div>   
         <!-- Graph row 1-->
          <div class="border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 p-4 grid lg:grid-cols-2 grid-cols-1 gap-6 sm:gap-8 md:gap-4 mb-4">
-            <div class="flex  gap-4 items-center justify-center rounded ">
+            <div class="flex gap-4 items-center justify-center rounded ">
                 <IncomingRowGraphType2 />
             </div>
-            <div class="flex gap-4 items-center justify-center rounded h-88 ">
+            <div class="flex gap-4 items-center justify-center rounded ">
                 <IncomingPieGraphType1 />
             </div>
-            <div class=" gap-4 items-center justify-center rounded h-88 ">
+            <!-- <div class="gap-4 items-center justify-center rounded">
                 <IncomingLineGraphType1 />
-            </div>
+            </div> -->
             <div class="hidden lg:flex lg:col-span-2 gap-4 items-center justify-center rounded h-88 ">
                 <IncomingColGraphType1 />
             </div>
@@ -163,10 +163,13 @@
 
 //Self Graph
 import IncomingPieGraphType1 from "./widget/graph/IncomingPieGraphType1.vue"
-import IncomingLineGraphType1 from "./widget/graph/IncomingLineGraphType1.vue";
+
+// import IncomingLineGraphType1 from "./widget/graph/IncomingLineGraphType1.vue";
+
 import IncomingColGraphType1 from "./widget/graph/IncomingColGraphType1.vue";
 import IncomingRowGraphType1 from "./widget/graph/IncomingRowGraphType1.vue"
 import IncomingRowGraphType2 from "./widget/graph/IncomingRowGraphType2.vue";
+
 
 
 
@@ -176,11 +179,10 @@ components: {
 
     //Self Graph
     IncomingPieGraphType1,
-    IncomingLineGraphType1,
+    // IncomingLineGraphType1,
     IncomingColGraphType1,
     IncomingRowGraphType1,
     IncomingRowGraphType2,
-
 },  
 
 };
