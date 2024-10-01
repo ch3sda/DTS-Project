@@ -1,14 +1,14 @@
 <template>
-    <a class="md:w-full w-full md:h-full block md:p-4 p-4 bg-white border border-gray-300 rounded-lg shadow hover:bg-gray-100 dark:bg-primary-blue dark:border-gray-700 dark:hover:bg-gray-700">
+    <a class="md:w-full w-full md:h-full block md:p-4 p-4 bg-white border border-gray-300 rounded-lg shadow dark:bg-primary-blue dark:border-gray-700">
       <h5 class="mb-2 text-lg font-normal md:text-2xl tracking-tight text-primary-blue dark:text-white">
-        Line Graph<br>
+        Bar Graph<br>
         <span class="mb-2 text-xs font-thin md:text-lg tracking-tight text-gray-500 dark:text-gray-400"> 
           Your request per months
         </span> 
       </h5> 
       <div class="flex md:block items-center justify-center" id="chart">
         <!-- Use ApexChart component for line chart -->
-        <apexchart class="w-full w-100" height="200" type="line" :options="chartOptions" :series="series"></apexchart>
+        <apexchart class="w-full" height="200" type="bar" :options="chartOptions" :series="series"></apexchart>
       </div>
     </a>
   </template>
@@ -23,12 +23,12 @@
     data() {
       return {
         series: [{
-          name: 'Desktops',
+          name: 'Permission',
           data: [1, 0, 0, 2, 3, 4, 1, 2, 0, 0, 2, 4] // Example data points for the line series
         }],
         chartOptions: {
           chart: {
-            type: 'line',
+            type: 'bar',
             toolbar: {
               show: true // Show the toolbar
             },
@@ -36,9 +36,9 @@
               enabled: false
             }
           },
-          colors: ['#FF4560'],
+          colors: ['#5356FF'],
           dataLabels: {
-            enabled: false
+            enabled: true
           },
           stroke: {
             curve: 'smooth',

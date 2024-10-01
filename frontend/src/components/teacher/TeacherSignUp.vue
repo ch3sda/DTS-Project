@@ -146,26 +146,6 @@
                                     <input type="comfirm-password" id="input-group-comfirm-password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="••••••••••••••" required />
                                 </div>
                             </div>
-                            <!-- Department -->
-                            <div class="md:col-span-4 col-span-4">
-                            <label for="input-group-department" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Department</label>
-                            <div class="relative">
-                                <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-                                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">
-                                        <path d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"/>                                    
-                                    </svg>
-                                </div>
-                                <select type="generation" id="input-group-generation" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
-                                    <option value="Food">Food Technology And Engineering</option>
-                                    <option value="SCA">Automation and Supply Chain System And Engineering</option>
-                                    <option value="DSE">Data Science And Engineering</option>
-                                    <option value="EED">Enviromental Engineering</option>
-                                    <option value="Bio">Bio Engineering</option>
-                                    <option value="ITE">Information Technology Engineering</option>
-                                    <option value="TEED">Telecommunication and Electronic Engineering</option>
-                                </select>                            
-                            </div>
-                            </div>
                         </div>
                     </div>
 
