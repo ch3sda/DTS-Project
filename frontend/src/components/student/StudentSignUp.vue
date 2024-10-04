@@ -3,9 +3,10 @@
         <div class="mt-24  bg-white lg:grid dark:border dark:border-gray-600 dark:border-dashed dark:bg-gray-800 md:grid-cols-2 rounded-lg shadow">
             <!-- Picside -->
             <div class="p-4 md:px-32 md:space-y-4 rounded-lg md:rounded-l-lg bg-primary-blue">
-                <!-- FE LOGO -->
+                <!-- LOGO -->
                 <div class="flex justify-center items-center">
                     <img src="@/assets/logo/FE_logo_white_png.png" class="h-16 w-16 md:h-32 md:w-32" alt="FE Logo" />
+                    <img src="@/assets/logo/AskForLeave_Logo_Big.png" class="h-16 w-16 md:h-32 md:w-32" alt="FE Logo" />
                 </div>
                 <!-- TEXT -->
                 <div>
@@ -201,7 +202,7 @@
                             </div>
                             <!-- Class -->
                             <div class="md:col-span-2 col-span-4">
-                            <label for="input-group-class" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                            <label for="input-group-class" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Class</label>
                             <div class="relative">
                                 <div class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
                                     <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor">

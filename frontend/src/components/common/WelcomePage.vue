@@ -3,9 +3,10 @@
     <div class="dark:border-2 dark:border-primary-blue dark:border-dashed dark:bg-gray-800 mt-24 lg:grid bg-white lg:grid-cols-2 rounded-lg shadow">
           <!-- Picside -->
         <div class="p-4 md:px-32 md:space-y-4 rounded-lg md:rounded-l-lg bg-primary-blue">
-          <!-- FE LOGO -->
+          <!-- LOGO -->
           <div class="flex justify-center items-center">
             <img src="@/assets/logo/FE_logo_white_png.png" class="h-16 w-16 md:h-32 md:w-32" alt="FE Logo" />
+            <img src="@/assets/logo/AskForLeave_Logo_Big.png" class="h-16 w-16 md:h-32 md:w-32" alt="FE Logo" />
           </div>
           <!-- TEXT -->
           <div>
