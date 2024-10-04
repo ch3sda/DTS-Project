@@ -38,7 +38,7 @@
         <!-- Graph -->
          <div class="border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 p-4 grid lg:grid-cols-2 grid-cols-1 gap-6 sm:gap-8 md:gap-4 mb-4">
             <div class="flex md:row-span-2 gap-4 items-center justify-center rounded h-88 ">
-                <SelfRadarGraphType1 />
+                <SelfRowGraphType1 />
             </div>
             <div class="flex gap-4 items-center justify-center rounded h-88 ">
                 <SelfPieGraphType1 />
@@ -62,7 +62,7 @@ import RequestAvailable from "./widget/normal/SelfRequestAvailable.vue";
 //Self Graph
 import SelfPieGraphType1 from "./widget/graph/SelfPieGraphType1.vue";
 import SelfBarGraphType1 from "./widget/graph/SelfBarGraphType1.vue";
-import SelfRadarGraphType1 from "./widget/graph/SelfRadarGraphType1.vue";
+import SelfRowGraphType1 from "./widget/graph/SelfRowGraphType1.vue";
 
 
 export default {
@@ -77,7 +77,7 @@ components: {
     //Self Graph
     SelfPieGraphType1,
     SelfBarGraphType1,
-    SelfRadarGraphType1,
+    SelfRowGraphType1
 },
 
 };

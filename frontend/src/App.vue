@@ -1,4 +1,4 @@
-<template>
+<template>  
   <div id="app" class="bg-main-background dark:bg-gray-800 min-h-screen">
     <!-- Conditionally render Navbar based on the user's role -->
     <component :is="getNavbarComponent" />
