@@ -18,6 +18,7 @@ import StudentDocument from '@/components/student/StudentDocument.vue';
 import StudentNotification from '@/components/student/StudentNotification.vue';
 import StudentTrack from '@/components/student/StudentTrack.vue';
 import StudentSignUp from '@/components/student/StudentSignUp.vue';
+import StudentProfile from '@/components/student/StudentProfile.vue';
 
 import TeacherDashboard from '@/components/teacher/TeacherDashboard.vue';
 import TeacherIncoming from '@/components/teacher/TeacherIncoming.vue';
@@ -49,6 +50,7 @@ const routes = [
     { path: '/student/notification', name: 'StudentNotification', component: StudentNotification, meta: { title:"Incoming" ,  requiresAuth: true , role: 'student' }},
     { path: '/student/track', name: 'StudentTrack', component: StudentTrack, meta: { title:"Track" ,  requiresAuth: true , role: 'student' }},
     { path: '/student/signup', name: 'StudentSignUp', component: StudentSignUp, meta: { title:"SignUp" ,  requiresAuth: false, role: 'student' }},
+    { path: '/student/profile', name: 'StudentProfile', component: StudentProfile, meta: {title: "Profile", requiresAuth: false, role: 'student'}},
 
     // Teacher
     { path: '/teacher/signup', name: 'TeacherSignUp', component: TeacherSignUp, meta: { title:"SignUp" , requiresAuth: false, role: 'teacher' }},

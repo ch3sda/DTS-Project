@@ -1,5 +1,5 @@
 <template>
-    <div>
-        asdkjsaufsukdf
+    <div class="mt-14 w-full">
+
     </div>
 </template>
